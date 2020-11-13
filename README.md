@@ -1,0 +1,2 @@
+# xinminwang.github.io
+hexo

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="这是一个标题, wangxinmin">
+    <meta name="keywords" content="函数使用方法记录, wangxinmin">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>这是一个标题 | wangxinmin</title>
+    <title>函数使用方法记录 | wangxinmin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -234,7 +234,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/xinminwang" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -291,7 +291,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/xinminwang" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">这是一个标题</h1>
+                    <h1 class="description center-align post-title">函数使用方法记录</h1>
                 </div>
             </div>
         </div>
@@ -460,7 +460,20 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="MATLAB函数使用方法记录"><a href="#MATLAB函数使用方法记录" class="headerlink" title="MATLAB函数使用方法记录"></a>MATLAB函数使用方法记录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fseek(fid,offset,origin)&#x2F;&#x2F;常与ftell连用（ftell用于返回文件指针的位置）</span><br></pre></td></tr></table></figure>
+
+<h4 id="fid-是文件句柄，offset-是指针距离orgin（参考指针位置）的偏移量"><a href="#fid-是文件句柄，offset-是指针距离orgin（参考指针位置）的偏移量" class="headerlink" title="fid 是文件句柄，offset 是指针距离orgin（参考指针位置）的偏移量"></a>fid 是文件句柄，offset 是指针距离orgin（参考指针位置）的偏移量</h4><p>offset &gt;0 向文件末尾移动</p>
+<p>offset=0 不偏移</p>
+<p>offset&lt;0 向文件开始的位置偏移</p>
+<h4 id="offset-是指针的参照位置"><a href="#offset-是指针的参照位置" class="headerlink" title="offset 是指针的参照位置"></a>offset 是指针的参照位置</h4><p>bof或-1 表示文件的开端位置</p>
+<p>cof或0 表示文件的当前位置</p>
+<p>eof或1 表示文件的末尾</p>
+<p>这个和c语言有点不同</p>
+<p>seek_set或0 表示文件的开端</p>
+<p>seek_cur 表示文件的当前位置</p>
+<p>seek_end 表示文件的末尾</p>
+<hr>
+
             </div>
             <hr/>
 
@@ -475,7 +488,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                    <a href="/about" rel="external nofollow noreferrer">王新民</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -485,7 +498,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2020/11/14/2020/">http://example.com/2020/11/14/2020/</a>
+                    <a href="http://xinminwang.github.io/2020/11/14/2020-11-06-MATLAB/">http://xinminwang.github.io/2020/11/14/2020-11-06-MATLAB/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -498,7 +511,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">John Doe</a>
+                    <a href="/about" target="_blank">王新民</a>
                     !
                 </span>
             </div>
@@ -653,7 +666,7 @@
                         <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -690,18 +703,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/11/14/2020/">
+                <a href="/2020/11/14/2020-11-08-BWP/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="这是一个标题">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">这是一个标题</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -711,18 +723,17 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            王新民
                             
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -730,16 +741,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/14/nihc/">
+                <a href="/2020/11/14/2020-11-06-MATLAB/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="函数使用方法记录">
                         
-                        <span class="card-title">Hello</span>
+                        <span class="card-title">函数使用方法记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -755,11 +766,12 @@
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            王新民
                             
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -822,7 +834,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h2, h3, h4, h5'
         });
 
         // modify the toc link href to support Chinese.
@@ -834,7 +846,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h2, h3, h4, h5').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -937,7 +949,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                    type="playlist"
                    id="503838841"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
@@ -960,7 +972,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 <span id="year">2019-2020</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">John Doe</a>
+            <a href="/about" target="_blank">王新民</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -987,13 +999,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/xinminwang" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:email_wangxinmin@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1003,7 +1015,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=754985207" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 754985207" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 

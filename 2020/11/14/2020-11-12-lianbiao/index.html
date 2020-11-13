@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, wangxinmin">
+    <meta name="keywords" content="wangxinmin">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | wangxinmin</title>
+    <title>wangxinmin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -234,7 +234,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/xinminwang" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -291,7 +291,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/xinminwang" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -444,7 +444,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-13
+                    2020-11-14
                 </div>
                 
 
@@ -460,19 +460,37 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <hr>
+<h2 id="title：建立任何类型链表"><a href="#title：建立任何类型链表" class="headerlink" title="title：建立任何类型链表"></a>title：建立任何类型链表</h2><h2 id="结构体的定义"><a href="#结构体的定义" class="headerlink" title="结构体的定义"></a>结构体的定义</h2><ol>
+<li>当结构体使用如下定义一个指向结构的指针时。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">struct node					</span><br><span class="line">&#123;									</span><br><span class="line">	int value;						</span><br><span class="line">	struct node *next;				</span><br><span class="line">&#125; *NODE;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>在使用NODE这个结构体指针时需要分配内存，即在函数中需要对NODE分配内存才能使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">	NODE&#x3D;(node *)malloc(sizeof(struct node)) &#x2F;&#x2F;并强转为指向node的指针</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<hr>
+<ol start="2">
+<li>当结构体使用typedef 把结构体指针重新定义为一种结构体指针时（也就是使用typedef 把结构体指针重新定义为一种类型，这个类型就是**==链表==**）</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">typedef struct node					</span><br><span class="line">&#123;									</span><br><span class="line">	int value;						</span><br><span class="line">	struct node *next;				</span><br><span class="line">&#125; *NODE;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p><strong>使用这个链表（现在这个链表是一种类型，不能直接使用，要使用此类型定义一个链表变量)时，NODE lianbiao;最重要的是对这个链表分配动态内存并强转为链表对应的类型。（因为此变量是NODE类型，所以强转时变为NODE类型）</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">	NODE lianbiao;</span><br><span class="line">	lianbiao&#x3D;(NODE)malloc(sizeof(struct node));</span><br><span class="line">	&#x2F;&#x2F;接下来就可以使用lianbiao了</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<ol start="3">
+<li><p>当使用#define定义一种可以创建任何类型的链表时，要使用 define 和typedef同时使用 define 要替换的内容必须在同一行（如果替换的内容覆盖多行，必须使用连字符，即“\”</p>
+<p><strong>定义一种链表后，也必须先用这种链表类型定义一个变量，然后对变量分配动态内存并强转为这个变量对应的链表类型</strong></p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#define LIST(T) typedef struct node	&#123;T value;struct node *next;&#125; *NODE;</span><br><span class="line">&#x2F;&#x2F;使用define的替换功能定义一种可以时任何类型的链表（通过参量T输入想要的类型）</span><br><span class="line">&#x2F;&#x2F;define所替换的内容必须在同一行如果替换的内容覆盖多行可以使用连字符,即 “\”。上面的那句可以替换成下面的写法</span><br><span class="line"></span><br><span class="line">#define LIST(T) typedef \</span><br><span class="line">struct node				\</span><br><span class="line">&#123;						\</span><br><span class="line">	T value;			\</span><br><span class="line">	struct node *next;	\</span><br><span class="line">&#125; *NODE;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>下面时如何使用各种类型的链表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">	LIST(int);&#x2F;&#x2F;被替换成typedef struct node	&#123;int value;struct node *next;&#125; *NODE;      int链表类型定义</span><br><span class="line">	NODE lianbiao; 使用int类型链表，定义一个链表（变量）。</span><br><span class="line">	lianbiao&#x3D;(NODE)malloc(sizeof(struct node));&#x2F;&#x2F;对这个链表（变量）分配动态内存，并强转为NODE类型的链表（强转为定义这个链表（变量）的类型）</span><br><span class="line">	&#x2F;&#x2F;下面使用这个链表</span><br><span class="line">	lianbiao-&gt;value&#x3D;8;</span><br><span class="line">	printf(&quot;%d&quot;,lianbiao-&gt;value);</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	LIST(char);&#x2F;&#x2F;被替换为typedef struct node	&#123;char value;struct node *next;&#125; *NODE;  char链表类型定义</span><br><span class="line">	NODE lianbiao1; &#x2F;&#x2F;使用char类型链表，定义一个链表（变量）。</span><br><span class="line">	lianbiao1&#x3D;(NODE)malloc(sizeof(struct node));&#x2F;&#x2F;对这个链表（变量）分配动态内存，并强转为NODE类型的链表（强转为定义这个链表（变量）的类型）</span><br><span class="line">	&#x2F;&#x2F;下面使用这个链表</span><br><span class="line">	lianbiao1-&gt;value&#x3D;&#39;a&#39;;</span><br><span class="line">	printf(&quot;%c&quot;,lianbiao1-&gt;value);</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	typedef int nihao;</span><br><span class="line">	LIST(nihao);&#x2F;&#x2F;被替换为typedef struct node	&#123;nihao value;struct node *next;&#125; *NODE;  nihao链表类型定义</span><br><span class="line">	NODE lianbiao2; &#x2F;&#x2F;使用char类型链表，定义一个链表（变量）。</span><br><span class="line">	lianbiao2&#x3D;(NODE)malloc(sizeof(struct node));&#x2F;&#x2F;对这个链表（变量）分配动态内存，并强转为NODE类型的链表（强转为定义这个链表（变量）的类型）</span><br><span class="line">	&#x2F;&#x2F;下面使用这个链表</span><br><span class="line">	nihao a;</span><br><span class="line">	scanf(&quot;%d&quot;,&amp;a);</span><br><span class="line">	lianbiao2-&gt;value&#x3D;a;</span><br><span class="line">	printf(&quot;%d&quot;,lianbiao2-&gt;value);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意上面三条LIST(T) 不能同时出现在同一个函数，不然会报错重定义NODE</strong></p>
+<p>下面时这三个链表建立和使用的程序，<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/xinminwang/picture-host/main/document/2020-11-12-%E5%BB%BA%E7%AB%8B%E4%BB%BB%E4%BD%95%E7%B1%BB%E5%9E%8B%E9%93%BE%E8%A1%A8.cpp">下载文件</a></p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/2020-11-12-%E5%BB%BA%E7%AB%8B%E4%BB%BB%E4%BD%95%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%93%BE%E8%A1%A8.png" alt="2020-11-12-建立任何类型的链表"></p>
 
             </div>
             <hr/>
@@ -488,7 +506,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                    <a href="/about" rel="external nofollow noreferrer">王新民</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -498,7 +516,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2020/11/13/hello-world/">http://example.com/2020/11/13/hello-world/</a>
+                    <a href="http://xinminwang.github.io/2020/11/14/2020-11-12-lianbiao/">http://xinminwang.github.io/2020/11/14/2020-11-12-lianbiao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -511,7 +529,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">John Doe</a>
+                    <a href="/about" target="_blank">王新民</a>
                     !
                 </span>
             </div>
@@ -666,7 +684,7 @@
                         <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -703,54 +721,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/11/14/nihc/">
+                <a href="/2020/11/14/2020-11-12-lianbiao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hello">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Hello</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/11/13/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -761,17 +743,54 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            王新民
                             
                         </span>
                     </div>
                 </div>
 
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/11/14/2020-11-10-markdown/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            王新民
+                            
+                        </span>
+                    </div>
+                </div>
                 
             </div>
         </div>
@@ -834,7 +853,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h2, h3, h4, h5'
         });
 
         // modify the toc link href to support Chinese.
@@ -846,7 +865,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h2, h3, h4, h5').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -949,7 +968,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                    type="playlist"
                    id="503838841"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
@@ -972,7 +991,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 <span id="year">2019-2020</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">John Doe</a>
+            <a href="/about" target="_blank">王新民</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -999,13 +1018,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/xinminwang" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:email_wangxinmin@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1015,7 +1034,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=754985207" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 754985207" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 

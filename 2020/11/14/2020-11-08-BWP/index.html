@@ -29,8 +29,11 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="新民之家" type="application/atom+xml">
-</head>
+<meta name="generator" content="Hexo 5.2.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="新民之家" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -477,7 +480,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="BWP-带宽部分"><a href="#BWP-带宽部分" class="headerlink" title="BWP(带宽部分)"></a>BWP(带宽部分)</h1><h2 id="BWP的定义"><a href="#BWP的定义" class="headerlink" title="BWP的定义"></a>BWP的定义</h2><p>根据38.211 4.4.5，载波带宽部分定义如下：载波带宽部分是一组物理资源块，从给定载波上给定命理（u）的公共资源块的相邻子集中选择</p>
-<p><a target="_blank" rel="noopener" href="https://xinmin.org/">图1</a></p>
+<p><a href="https://xinmin.org/">图1</a></p>
 <p><img src="G:\desktop\1.PNG" alt="1"></p>
 <p>N(size,BWP,0)代表一个BWP有N个PRB块。N(start，BWP,0指 BWP#0的开始位置距离CRB0的PRB个数</p>
 <h5 id="下行："><a href="#下行：" class="headerlink" title="下行："></a>下行：</h5><ul>
@@ -531,7 +534,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xinminwang.github.io/2020/11/14/2020-11-08-BWP/">http://xinminwang.github.io/2020/11/14/2020-11-08-BWP/</a>
+                    <a href="https://xinmin.org/2020/11/14/2020-11-08-BWP/">https://xinmin.org/2020/11/14/2020-11-08-BWP/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -722,6 +725,32 @@
     
 
     
+        <div class="disqus-card card" data-aos="fade-up">
+    <div id="disqus_thread" class="card-content">
+        <noscript>Please enable JavaScript to view the
+            <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+    </div>
+</div>
+
+<script type="text/javascript">
+    disqus_config = function () {
+        this.page.url = 'https://xinmin.org/2020/11/14/2020-11-08-BWP/';
+        this.page.identifier = '/2020/11/14/2020-11-08-BWP/';
+        this.page.title = 'BWP（带宽部分）';
+    };
+    let disqus_shortname = '';
+
+    (function () { // DON'T EDIT BELOW THIS LINE
+        let d = document, s = d.createElement('script');
+        // 如：s.src = 'https://blinkfox.disqus.com/embed.js';
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+    
 
     
 
@@ -740,13 +769,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-08-PDCCH/">
+                <a href="/2020/11/14/2020-11-06-MATLAB/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="PDCCH信道详解">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="函数使用方法记录">
                         
-                        <span class="card-title">PDCCH信道详解</span>
+                        <span class="card-title">函数使用方法记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -777,13 +806,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-06-MATLAB/">
+                <a href="/2020/11/14/2020-11-08-PDCCH/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="函数使用方法记录">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="PDCCH信道详解">
                         
-                        <span class="card-title">函数使用方法记录</span>
+                        <span class="card-title">PDCCH信道详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -814,6 +843,43 @@
 </div>
 
 
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 新民之家<br />'
+            + '文章作者: 王新民<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
 
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
@@ -834,10 +900,6 @@
 
 
 <!-- 代码块折行 -->
-
-<style type="text/css">
-code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
-</style>
 
 
     </div>
@@ -1010,7 +1072,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.7k</span>&nbsp;字
+                class="white-color">4.4k</span>&nbsp;字
             
             
             
@@ -1107,6 +1169,16 @@ $(function () {
 
     <!-- Baidu Analytics -->
 
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
     <!-- Baidu Push -->
 
 <script>
@@ -1135,8 +1207,21 @@ $(function () {
     
 
 	
+	    <div style="position:fixed;bottom:125px;right:9px;cursor: pointer;">
+	        <a title="兔小巢" target="_blank" rel="noopener" href="https://support.qq.com/products/293390"><img src="/medias/contact.png"></a>
+	    </div>
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
     
 
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
     
 
     

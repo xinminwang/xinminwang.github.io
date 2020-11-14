@@ -104,7 +104,7 @@ blockquote {
     border-right-width: 0px !important;
 }
 
-.line-numbers {
+.line-numbers {/*这是行号的样式，并可不能删除行号*/
     padding: 1.5rem 1.5rem 1.5rem 3.5rem !important;
     margin: 1rem 0 !important;
     background: #272822;
@@ -113,7 +113,7 @@ blockquote {
     tab-size: 4;
 }
 
-pre {
+pre {/*代码块修改*/
     padding: 2.5rem 1.5rem 1.5rem 1.5rem !important;
     margin: 1rem 0 !important;
     background: #272822;
@@ -140,9 +140,9 @@ code {
     padding: 1px 5px;
     top: 13px !important;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
-    font-size: 0.91rem;
+    /*font-size: 0.91rem;注释掉才能显示行号*/
     color: #e96900;
-    background-color: #f8f8f8;
+    background-color: #1b1818;
     border-radius: 2px;
 }
 
@@ -272,7 +272,7 @@ mark {
 }
 
 .text-color {
-    color: #0f9d58 !important;
+    color: #9d0f33 !important;
 }
 
 .white-color {
@@ -1247,10 +1247,10 @@ article .article-tags .chip {
     list-style-type: circle;
 }
 
-#articleContent table {
+#articleContent table {/*设置代码块的那个表格*/
 	width: 100%;
     display: block;
-    border-collapse: collapse;
+    border-collapse: collapse;/*边框和包含他的大边框合并*/
     border-spacing: 0;
     overflow: auto;
 }

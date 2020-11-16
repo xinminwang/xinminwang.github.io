@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="PDCCH信道详解, 新民之家">
+    <meta name="keywords" content="DNS,github pages">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>PDCCH信道详解 | 新民之家</title>
+    <title>修改DNS解决github pages打不开， 修改DNS提升网页打开速度 | 新民之家</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -314,12 +314,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photoDNS.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">PDCCH信道详解</h1>
+                    <h1 class="description center-align post-title">修改DNS解决github pages打不开， 修改DNS提升网页打开速度</h1>
                 </div>
             </div>
         </div>
@@ -434,9 +434,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/DNS/">
+                                <span class="chip bg-color">DNS</span>
+                            </a>
+                        
+                            <a href="/tags/github-pages/">
+                                <span class="chip bg-color">github pages</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -448,7 +456,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-14
+                    2020-11-16
                 </div>
                 
 
@@ -457,14 +465,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    17
+                    824
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -479,8 +487,56 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="PDCCH信道详解"><a href="#PDCCH信道详解" class="headerlink" title="PDCCH信道详解"></a>PDCCH信道详解</h1><p>pdcch承载的是dci信息</p>
-<h2 id="试试表情功能"><a href="#试试表情功能" class="headerlink" title="试试表情功能"></a>试试表情功能</h2><p><span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+                <h3 id="什么是DNS？"><a href="#什么是DNS？" class="headerlink" title="什么是DNS？"></a>什么是DNS？</h3><p>DNS 是域名系统 (Domain Name System) 的缩写，它是由解析器和域名服务器组成的，即域名解析服务器，靠它把你要访问的网址找到然后把信息送到你电脑上</p>
+<p>也就是由于主机只能理解ip地址，所以就需要一个翻译器把由字母组成的域名（例如<a target="_blank" rel="noopener" href="http://www.baidu.com)转换成对应的ip地址(14.215.177.39),这个翻译器解释dns服务器.作用就是把域名解析为ip地址,并转向这个ip地址,这样我们就能打开网页了/">www.baidu.com)转换成对应的ip地址（14.215.177.39），这个翻译器解释DNS服务器。作用就是把域名解析为ip地址，并转向这个ip地址，这样我们就能打开网页了</a></p>
+<h3 id="优化DNS可以打开github-pages等网站"><a href="#优化DNS可以打开github-pages等网站" class="headerlink" title="优化DNS可以打开github pages等网站"></a>优化DNS可以打开github pages等网站</h3><p>各地运营商均有自己的DNS服务器，小运营商会为了利益，劫持用户DNS，以达到域名劫持，修改注册信息，劫持解析结果来获利。最简单的例子，你输错网址的时候会弹出一堆小广告。</p>
+<p>DNS并不能提高网速，但是优质的DNS可以加快ip解析速度，从而提高打开网页的速度，还能防止DNS劫持，净化一下广告。但是对于下载等不经过DNS解析的服务没有帮助</p>
+<p>大中型网站目前都使用CDN做内容分发，确保用户就近接入而提高访问速度。CDN是怎么做到就近接入的呢？关键就在于你用的DNS，你用哪个地方的DNS互联网公司基本认为你就是那个地方的宽带用户。如果你将DNS写错了，比如深圳宽带用户将DNS填写成北京的DNS，那么无论你访问taobao、sina你都被引导到北京去，网速自然慢了许多。所以说，DNS是流量牵引器，必须选合适的。</p>
+<h4 id="使用纯净第三方DNS的好处"><a href="#使用纯净第三方DNS的好处" class="headerlink" title="使用纯净第三方DNS的好处"></a>使用纯净第三方DNS的好处</h4><p>以阿里公共DNS为例，它的特点就是快速、稳定和智能。快速：阿里公共DNS通过BGP anycast技术，让用户访问到离自己较近的DNS集群。主动同步com/net域名、万网注册域名的变更，减小ttl时间的影响，快速访问到正确的记录。主动缓存热点域名的，提高查询CACHE命中率，减少递归过程，快速应答。稳定：异地多机房高可用架构；基于DPDK自主研发的高性能DNS系统；Aliguard多种攻击防御策略；持久化保存热点记录，当“根”或域名的权威DNS出现异常后，阿里公共DNS具备快速恢复正常访问的能力。智能：结合阿里优质CDN资源和精准的IP地址库，让用户访问到较近的网站。</p>
+<table>
+<thead>
+<tr>
+<th>DNS提供商</th>
+<th>ipv4地址</th>
+<th>ipv6地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>阿里</td>
+<td>主：223.5.5.5（推荐）<br>备：223.6.6.6（推荐）</td>
+<td>主：2400:3200::1<br>备：2400:3200:baba::1</td>
+</tr>
+<tr>
+<td>百度</td>
+<td>180.76.76.76</td>
+<td>主：2400:da00::6666</td>
+</tr>
+<tr>
+<td>移动/联通/电信</td>
+<td>114.114.114.114<br>114.114.115.115</td>
+<td></td>
+</tr>
+<tr>
+<td>清华大学</td>
+<td>主：101.6.6.6</td>
+<td>主：2001:da8::666</td>
+</tr>
+<tr>
+<td>Cloudflare DNS(国外)</td>
+<td>主：1.1.1.1<br>备：1.0.0.1</td>
+<td>主：2606:4700:4700::1111<br>备：2606:4700:4700::1001</td>
+</tr>
+<tr>
+<td>谷歌公共DNS</td>
+<td>主：8.8.8.8<br>备：8.8.4.4</td>
+<td>主：2001:4860:4860::8888<br>备：2001:4860:4860::8844</td>
+</tr>
+<tr>
+<td>OneDNS</td>
+<td>IPv4拦截版 主：117.50.11.11  备：52.80.66.66 <br>IPv4纯净版  主：117.50.10.10  备：52.80.52.52</td>
+<td></td>
+</tr>
+</tbody></table>
 
             </div>
             <hr/>
@@ -506,7 +562,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xinmin.org/2020/11/14/2020-11-08-PDCCH/">https://xinmin.org/2020/11/14/2020-11-08-PDCCH/</a>
+                    <a href="https://xinmin.org/2020/11/16/DNS/">https://xinmin.org/2020/11/16/DNS/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -543,7 +599,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/DNS/">
+                                    <span class="chip bg-color">DNS</span>
+                                </a>
+                            
+                                <a href="/tags/github-pages/">
+                                    <span class="chip bg-color">github pages</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -707,9 +771,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://xinmin.org/2020/11/14/2020-11-08-PDCCH/';
-        this.page.identifier = '/2020/11/14/2020-11-08-PDCCH/';
-        this.page.title = 'PDCCH信道详解';
+        this.page.url = 'https://xinmin.org/2020/11/16/DNS/';
+        this.page.identifier = '/2020/11/16/DNS/';
+        this.page.title = '修改DNS解决github pages打不开， 修改DNS提升网页打开速度';
     };
     let disqus_shortname = '';
 
@@ -737,17 +801,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-10-markdown/">
+                <a href="/2020/11/16/DNS/">
                     <div class="card-image">
                         
+                        <img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photoDNS.jpg" class="responsive-img" alt="修改DNS解决github pages打不开， 修改DNS提升网页打开速度">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="markdown语法大全（超详细）">
-                        
-                        <span class="card-title">markdown语法大全（超详细）</span>
+                        <span class="card-title">修改DNS解决github pages打不开， 修改DNS提升网页打开速度</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -757,9 +821,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -768,15 +832,16 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Typora/">
-                        <span class="chip bg-color">Typora</span>
+                    <a href="/tags/DNS/">
+                        <span class="chip bg-color">DNS</span>
                     </a>
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/github-pages/">
+                        <span class="chip bg-color">github pages</span>
                     </a>
                     
                 </div>
@@ -790,13 +855,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-12-lianbiao/">
+                <a href="/2020/11/15/uiui/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="建立任何类型链表">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="uiui">
                         
-                        <span class="card-title">建立任何类型链表</span>
+                        <span class="card-title">uiui</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -807,7 +872,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-15
                             </span>
                         <span class="publish-author">
                             

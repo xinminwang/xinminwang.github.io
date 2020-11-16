@@ -6,7 +6,7 @@
   <link href="https://xinmin.org/atom.xml" rel="self"/>
   
   <link href="https://xinmin.org/"/>
-  <updated>2020-11-14T19:25:56.928Z</updated>
+  <updated>2020-11-16T01:30:05.121Z</updated>
   <id>https://xinmin.org/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>修改DNS解决github pages打不开， 修改DNS提升网页打开速度</title>
+    <link href="https://xinmin.org/2020/11/16/DNS/"/>
+    <id>https://xinmin.org/2020/11/16/DNS/</id>
+    <published>2020-11-15T20:29:59.000Z</published>
+    <updated>2020-11-16T01:30:05.121Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;什么是DNS？&quot;&gt;&lt;a href=&quot;#什么是DNS？&quot; class=&quot;headerlink&quot; title=&quot;什么是DNS？&quot;&gt;&lt;/a&gt;什么是DNS？&lt;/h3&gt;&lt;p&gt;DNS 是域名系统 (Domain Name System)</summary>
+        
+      
+    
+    
+    
+    
+    <category term="DNS" scheme="https://xinmin.org/tags/DNS/"/>
+    
+    <category term="github pages" scheme="https://xinmin.org/tags/github-pages/"/>
+    
+  </entry>
   
   <entry>
     <title>uiui</title>
@@ -81,6 +106,33 @@
   </entry>
   
   <entry>
+    <title>markdown语法大全（超详细）</title>
+    <link href="https://xinmin.org/2020/11/14/2020-11-10-markdown/"/>
+    <id>https://xinmin.org/2020/11/14/2020-11-10-markdown/</id>
+    <published>2020-11-14T05:04:05.325Z</published>
+    <updated>2020-11-13T22:11:55.090Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
+&lt;p&gt;以下所有效果在 markdown 的typora编辑器和坚果云编辑器都能实现，但有些网站或编辑器不一定支持（如目录在github page 好像不支持）&lt;/p&gt;
+&lt;h1 id=&quot;关于换行&quot;&gt;&lt;a href=&quot;#关于换行&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Typora" scheme="https://xinmin.org/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="https://xinmin.org/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PDCCH信道详解</title>
     <link href="https://xinmin.org/2020/11/14/2020-11-08-PDCCH/"/>
     <id>https://xinmin.org/2020/11/14/2020-11-08-PDCCH/</id>
@@ -120,33 +172,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>markdown语法大全（超详细）</title>
-    <link href="https://xinmin.org/2020/11/14/2020-11-10-markdown/"/>
-    <id>https://xinmin.org/2020/11/14/2020-11-10-markdown/</id>
-    <published>2020-11-14T05:04:05.325Z</published>
-    <updated>2020-11-13T22:11:55.090Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
-&lt;p&gt;以下所有效果在 markdown 的typora编辑器和坚果云编辑器都能实现，但有些网站或编辑器不一定支持（如目录在github page 好像不支持）&lt;/p&gt;
-&lt;h1 id=&quot;关于换行&quot;&gt;&lt;a href=&quot;#关于换行&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Typora" scheme="https://xinmin.org/tags/Typora/"/>
-    
-    <category term="Markdown" scheme="https://xinmin.org/tags/Markdown/"/>
     
   </entry>
   

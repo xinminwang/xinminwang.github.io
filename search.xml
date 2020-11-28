@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>如何在linux上外网</title>
+      <link href="2020/12/09/Qv2ray/"/>
+      <url>2020/12/09/Qv2ray/</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载Qv2ray和v2ray-core"><a href="#下载Qv2ray和v2ray-core" class="headerlink" title="下载Qv2ray和v2ray-core"></a>下载Qv2ray和v2ray-core</h2><p>Qv2ray的下载地址点击<a href="https://github.com/Qv2ray/Qv2ray/releases">这里</a><br>目前是最新的是2.6.3版本，下载Qv2ray.v2.6.3.linux-x64.AppImage</p><p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photoQv2ray.png"></p><p>v2ray-core的下载地址点击<a href="https://github.com/v2ray/v2ray-core/releases">这里</a><br>目前是4.31.0版本，我下载的是4.27.0版本（其他没有试过）的v2ray-linux-64.zip</p><p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photov2ray(1).png"></p><h2 id="配置Qv2ray"><a href="#配置Qv2ray" class="headerlink" title="配置Qv2ray"></a>配置Qv2ray</h2><ol><li>把v2ray-linux-64.zip解压到home目录下的v2ray-linux文件夹（自己新建的文件夹）</li><li>把Qv2ray.v2.6.3.linux-x64.AppImage也放到home目录下，右键，属性，更改权限为允许作为程序执行文件。</li></ol><p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photoQv2ray%E6%9D%83%E9%99%90%E6%9B%B4%E6%94%B9.png"></p><ol start="3"><li>然后双击打开Qv2ray.v2.6.3.linux-x64.AppImage，点击首先项-&gt;内核设置，v2ray核心可执行文件，选择，解压缩后的到的文件夹里的v2ray文件</li></ol><p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E9%A6%96%E5%85%88%E9%A1%B9.png"></p><p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E5%86%85%E6%A0%B8%E8%AE%BE%E7%BD%AE.png"></p><ol start="4"><li>v2ray资源目录，选择，v2ray文件所在的目录，点击OK.</li><li>复制订阅地址，然后点Qv2ray的分组，订阅设置，勾选此分组是一个订阅，粘贴订阅地址<br>点击更新订阅，再点击yes，然后点击OK</li></ol><p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E7%B2%98%E8%B4%B4%E8%AE%A2%E9%98%85%E5%9C%B0%E5%9D%80.png"></p><ol start="4"><li>回到软件主页，双击打开默认分组，选择一个节点，然后右键，连接到此服务器即可</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 加速器 </tag>
+            
+            <tag> v2ray </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>修改DNS解决github pages打不开， 修改DNS提升网页打开速度</title>
       <link href="2020/11/16/DNS/"/>
       <url>2020/11/16/DNS/</url>
@@ -64,6 +85,19 @@
     
     
     <entry>
+      <title>PDCCH信道详解</title>
+      <link href="2020/11/14/2020-11-08-PDCCH/"/>
+      <url>2020/11/14/2020-11-08-PDCCH/</url>
+      
+        <content type="html"><![CDATA[<h1 id="PDCCH信道详解"><a href="#PDCCH信道详解" class="headerlink" title="PDCCH信道详解"></a>PDCCH信道详解</h1><p>pdcch承载的是dci信息</p><h2 id="试试表情功能"><a href="#试试表情功能" class="headerlink" title="试试表情功能"></a>试试表情功能</h2><p><span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>markdown语法大全（超详细）</title>
       <link href="2020/11/14/2020-11-10-markdown/"/>
       <url>2020/11/14/2020-11-10-markdown/</url>
@@ -79,19 +113,6 @@
             <tag> Markdown </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>PDCCH信道详解</title>
-      <link href="2020/11/14/2020-11-08-PDCCH/"/>
-      <url>2020/11/14/2020-11-08-PDCCH/</url>
-      
-        <content type="html"><![CDATA[<h1 id="PDCCH信道详解"><a href="#PDCCH信道详解" class="headerlink" title="PDCCH信道详解"></a>PDCCH信道详解</h1><p>pdcch承载的是dci信息</p><h2 id="试试表情功能"><a href="#试试表情功能" class="headerlink" title="试试表情功能"></a>试试表情功能</h2><p><span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>]]></content>
-      
-      
       
     </entry>
     

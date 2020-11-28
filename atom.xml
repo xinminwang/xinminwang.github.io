@@ -6,7 +6,7 @@
   <link href="https://xinmin.org/atom.xml" rel="self"/>
   
   <link href="https://xinmin.org/"/>
-  <updated>2020-11-16T01:30:05.121Z</updated>
+  <updated>2020-11-28T21:12:22.829Z</updated>
   <id>https://xinmin.org/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在linux上外网</title>
+    <link href="https://xinmin.org/2020/12/09/Qv2ray/"/>
+    <id>https://xinmin.org/2020/12/09/Qv2ray/</id>
+    <published>2020-12-09T04:29:59.000Z</published>
+    <updated>2020-11-28T21:12:22.829Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;下载Qv2ray和v2ray-core&quot;&gt;&lt;a href=&quot;#下载Qv2ray和v2ray-core&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="加速器" scheme="https://xinmin.org/tags/%E5%8A%A0%E9%80%9F%E5%99%A8/"/>
+    
+    <category term="v2ray" scheme="https://xinmin.org/tags/v2ray/"/>
+    
+  </entry>
   
   <entry>
     <title>修改DNS解决github pages打不开， 修改DNS提升网页打开速度</title>
@@ -106,6 +131,28 @@
   </entry>
   
   <entry>
+    <title>PDCCH信道详解</title>
+    <link href="https://xinmin.org/2020/11/14/2020-11-08-PDCCH/"/>
+    <id>https://xinmin.org/2020/11/14/2020-11-08-PDCCH/</id>
+    <published>2020-11-14T05:04:05.325Z</published>
+    <updated>2020-11-13T21:48:34.596Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;PDCCH信道详解&quot;&gt;&lt;a href=&quot;#PDCCH信道详解&quot; class=&quot;headerlink&quot; title=&quot;PDCCH信道详解&quot;&gt;&lt;/a&gt;PDCCH信道详解&lt;/h1&gt;&lt;p&gt;pdcch承载的是dci信息&lt;/p&gt;
+&lt;h2 id=&quot;试试表情功能&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>markdown语法大全（超详细）</title>
     <link href="https://xinmin.org/2020/11/14/2020-11-10-markdown/"/>
     <id>https://xinmin.org/2020/11/14/2020-11-10-markdown/</id>
@@ -129,28 +176,6 @@
     <category term="Typora" scheme="https://xinmin.org/tags/Typora/"/>
     
     <category term="Markdown" scheme="https://xinmin.org/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PDCCH信道详解</title>
-    <link href="https://xinmin.org/2020/11/14/2020-11-08-PDCCH/"/>
-    <id>https://xinmin.org/2020/11/14/2020-11-08-PDCCH/</id>
-    <published>2020-11-14T05:04:05.325Z</published>
-    <updated>2020-11-13T21:48:34.596Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;PDCCH信道详解&quot;&gt;&lt;a href=&quot;#PDCCH信道详解&quot; class=&quot;headerlink&quot; title=&quot;PDCCH信道详解&quot;&gt;&lt;/a&gt;PDCCH信道详解&lt;/h1&gt;&lt;p&gt;pdcch承载的是dci信息&lt;/p&gt;
-&lt;h2 id=&quot;试试表情功能&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
     
   </entry>
   

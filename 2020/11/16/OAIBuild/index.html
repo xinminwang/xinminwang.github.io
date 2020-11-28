@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="BWP（带宽部分）, 新民之家">
+    <meta name="keywords" content="OAI搭建教程, 新民之家">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>BWP（带宽部分） | 新民之家</title>
+    <title>OAI搭建教程 | 新民之家</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -314,12 +314,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">BWP（带宽部分）</h1>
+                    <h1 class="description center-align post-title">OAI搭建教程</h1>
                 </div>
             </div>
         </div>
@@ -448,7 +448,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-14
+                    2020-11-16
                 </div>
                 
 
@@ -457,14 +457,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    358
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -479,36 +479,190 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="BWP-带宽部分"><a href="#BWP-带宽部分" class="headerlink" title="BWP(带宽部分)"></a>BWP(带宽部分)</h1><h2 id="BWP的定义"><a href="#BWP的定义" class="headerlink" title="BWP的定义"></a>BWP的定义</h2><p>根据38.211 4.4.5，载波带宽部分定义如下：载波带宽部分是一组物理资源块，从给定载波上给定命理（u）的公共资源块的相邻子集中选择</p>
-<p><a href="https://xinmin.org/">图1</a></p>
-<p><img src="G:\desktop\1.PNG" alt="1"></p>
-<p>N(size,BWP,0)代表一个BWP有N个PRB块。N(start，BWP,0指 BWP#0的开始位置距离CRB0的PRB个数</p>
-<h5 id="下行："><a href="#下行：" class="headerlink" title="下行："></a>下行：</h5><ul>
-<li>一个UE最多可以配置四个载波带宽部分</li>
-</ul>
-<ul>
-<li>每个BW的带宽应等于或大于SSB带宽，但它可能包含也可能不包含SSB</li>
-<li>在给定时间，只有一个载波带宽部分可以处于活动状态</li>
-<li>只能在UE的活动带宽部分之内接收PDSCH，PDCCH，CSI-RS或TRS</li>
-<li>每个DL BWP包括至少一个具有UE特定搜索空间（USS）的CORESET。</li>
-<li>在主载波中，至少有一个配置的DL BWP包括一个带有公共搜索空间（CSS）的CORESET 。</li>
-</ul>
-<h5 id="上行"><a href="#上行" class="headerlink" title="上行"></a>上行</h5><ul>
-<li><p>一个UE最多可以配置四个载波带宽部分 </p>
+                <h2 id="系统和版本选择"><a href="#系统和版本选择" class="headerlink" title="系统和版本选择"></a>系统和版本选择</h2><p>如果英语较好，请参阅官方<a target="_blank" rel="noopener" href="https://gitlab.eurecom.fr/oai/openairinterface5g/wikis/HowToConnectCOTSUEwithOAIeNBNew">教程</a></p>
+<p>oai的搭建系统版本以及内核密切相关。不同的版本应使用不同的系统和内核。对于github上的master分支（早于 **<code>v0.6.1_tdd</code>**），建议使用低延迟内核3.19的Ubuntu 14.04 LTS</p>
+<p>对于github大于<strong>v1.0.0</strong>的分支或者develop分支，建议使用低延迟内核4.8.0（或高于4.8.0）或更高版本的Ubuntu 16.04（或更高）</p>
+<h2 id="更换低延迟的内核"><a href="#更换低延迟的内核" class="headerlink" title="更换低延迟的内核"></a>更换低延迟的内核</h2><p>笔者是基于ubuntu16.04搭建的。</p>
+<h4 id="第一步更换低延迟内核"><a href="#第一步更换低延迟内核" class="headerlink" title="第一步更换低延迟内核"></a>第一步更换低延迟内核</h4><p>查看本机内核的命令是</p>
+<p><code>sudo uname -a</code></p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E6%9F%A5%E7%9C%8B%E5%86%85%E6%A0%B8.png"></p>
+<p>去ubuntu内核<a target="_blank" rel="noopener" href="https://kernel.ubuntu.com/~kernel-ppa/mainline/">官网</a>下载4.8低延迟内核<a target="_blank" rel="noopener" href="https://kernel.ubuntu.com/~kernel-ppa/mainline/v4.8/">链接</a>下载下图三个内核</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo3%E4%B8%AA%E5%86%85%E6%A0%B8%E4%B8%8B%E8%BD%BD.PNG"></p>
+<h4 id="安装低延迟内核"><a href="#安装低延迟内核" class="headerlink" title="安装低延迟内核"></a>安装低延迟内核</h4><p>一次运行下面三条命令</p>
+<pre><code>sudo dpkg -i linux-headers-4.8.0-040800_4.8.0-040800.201610022031_all.deb
+
+sudo dpkg -ilinux-headers-4.8.0-040800-lowlatency_4.8.0-040800.201610022031_amd64.deb
+
+sudo dpkg -i linux-image-4.8.0-040800-lowlatency_4.8.0-040800.201610022031_amd64.deb</code></pre>
+<p>最后执行</p>
+<p><code>sudo reboot</code></p>
+<p>内核就更换完毕了，可以执行<code>sudo uname -a</code>查看内核</p>
+<h2 id="关闭电源管理"><a href="#关闭电源管理" class="headerlink" title="关闭电源管理"></a>关闭电源管理</h2><p>删除BIOS中的所有电源管理功能（尤其是睡眠状态）<br> C状态）和CPU频率缩放（英特尔SpeedStep）。 在某些情况下，您可以<br> 也可以使用cpufreqtool。 另外，在BIOS中禁用超线程，并确保在Linux中将其关闭 </p>
+<h4 id="关闭-c-state和p-state"><a href="#关闭-c-state和p-state" class="headerlink" title="关闭 c-state和p-state"></a>关闭 c-state和p-state</h4><p><code>sudo gedit /etc/default/grub</code></p>
+<p>在GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”这行的下面添加,并把这行注释掉</p>
+<pre><code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash quiet intel_pstate=disable processor.max_cstate=1 intel_idle.max_cstate=0 idle=poll"</code></pre>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E7%94%B5%E6%BA%90%E7%AC%AC%E4%B8%80%E6%AD%A5.png"></p>
+<h4 id="将-intel-powerclamp（Intel-电源管理驱动程序）加入黑名单"><a href="#将-intel-powerclamp（Intel-电源管理驱动程序）加入黑名单" class="headerlink" title="将 intel_powerclamp（Intel 电源管理驱动程序）加入黑名单"></a>将 intel_powerclamp（Intel 电源管理驱动程序）加入黑名单</h4><p>执行<code>sudo gedit /etc/modprobe.d/blacklist.conf</code></p>
+<p>在文件末尾添加</p>
+<p><code>blacklist intel_powerclam</code></p>
+<h4 id="关闭-CPU-睿频："><a href="#关闭-CPU-睿频：" class="headerlink" title="关闭 CPU 睿频："></a>关闭 CPU 睿频：</h4><p>依次执行</p>
+<pre><code>sudo apt-get install cpufrequtils
+sudo gedit /etc/default/cpufrequtils</code></pre>
+<p>这个cpufrequtils 大概率为空文件，在里面加上一句:</p>
+<p><code>GOVERNOR="performance"</code></p>
+<p>依次执行下面两条指令</p>
+<pre><code>sudo update-rc.d ondemand disable
+sudo /etc/init.d/cpufrequtils restart</code></pre>
+<ol start="5">
+<li>下载频率查看器i7z</li>
+</ol>
+<p><code>sudo apt-get install i7z</code></p>
+<p>运行i7z</p>
+<p><code>sudo i7z</code></p>
+<p>查看睿频是否成功关闭，会看到所有频率都在 C0%</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photoi7z_log.png"></p>
+<h2 id="安装高版本的cmake-为了安装usrp-b210-uhd驱动"><a href="#安装高版本的cmake-为了安装usrp-b210-uhd驱动" class="headerlink" title="安装高版本的cmake(为了安装usrp b210 uhd驱动)"></a>安装高版本的cmake(为了安装usrp b210 uhd驱动)</h2><h4 id="下载编译好的cmake"><a href="#下载编译好的cmake" class="headerlink" title="下载编译好的cmake"></a>下载编译好的cmake</h4><p>去cmake <a target="_blank" rel="noopener" href="https://cmake.org/files/">官网</a>下载最新的版本，我使用的是下面这个版本</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photocmake1.PNG"></p>
+<p>不要去github下载源码，不要使用源码安装，编译时间太长了，还容易出错。在官网下载的文件解压后进入目录后会看到只有 bin  doc  man  share四个文件夹，没有 bootstrap文件，这是因为已经编译好的，所以只要加入path里面就可以在命令行直接使用命令了</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photocmake%E4%B8%8B%E8%BD%BD%E5%9B%BE.png"></p>
+<h4 id="放到指定路径"><a href="#放到指定路径" class="headerlink" title="放到指定路径"></a>放到指定路径</h4><p>然后把解压后的四个文件复制到/usr/local/cmake文件夹里，如果没有cmake文件夹，就新建一个（新建文件夹的选项是灰色的，可以在命令行中执行<code>sudo nautilus</code>,弹出一个资源管理器，然后再去新建就可以了）<a name="1"></a></p>
+<h4 id="path配置"><a href="#path配置" class="headerlink" title="path配置"></a>path配置</h4><p>执行<code>sudo gedit ~/.bashrc</code></p>
+<p>在末尾添加如下的内容：</p>
+<p><code>export PATH=/usr/local/cmake/bin:$PATH</code></p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photocmakepath.png"></p>
+<p>最后执行 <code>source ~/.bashrc</code>配置生效</p>
+<h4 id="查看是否安装成功"><a href="#查看是否安装成功" class="headerlink" title="查看是否安装成功"></a>查看是否安装成功</h4><p>执行<code>cmake --version</code>会呈现如下字样，就安装成功了</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photocmake%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.png"></p>
+<h2 id="安装usrp-b210驱动"><a href="#安装usrp-b210驱动" class="headerlink" title="安装usrp b210驱动"></a>安装usrp b210驱动</h2><h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><p>执行</p>
+<pre><code>sudo apt-get -y install libboost-all-dev libusb-1.0-0-dev python-mako doxygen python-docutils cmake build-essential</code></pre>
+<h4 id="从GitHub获取源代码"><a href="#从GitHub获取源代码" class="headerlink" title="从GitHub获取源代码"></a>从GitHub获取源代码</h4><p>方法1：运行<code>git clone https://github.com/EttusResearch/uhd.git</code></p>
+<p>方法2：直接去github上下载 tar.gz压缩包解压即可（我是下载的mater分支的压缩包（即uhd-master.tar.gz）版本是uhd 4.0.0）解压后目录如下图</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photouhd%E8%A7%A3%E5%8E%8B%E5%90%8E%E7%9A%84%E7%9B%AE%E5%BD%95.PNG"></p>
+<h4 id="安装uhd驱动"><a href="#安装uhd驱动" class="headerlink" title="安装uhd驱动"></a>安装uhd驱动</h4><ol>
+<li><p>进入源代码根目录：</p>
 </li>
-<li><p>在给定时间，只有一个载波带宽部分可以处于活动状态 </p>
+<li><p>执行<code>cd host</code></p>
 </li>
-<li><p>如果UE配置有辅助上行链路</p>
-<ul>
-<li>此外，可以在补充上行链路中为UE配置多达四个载波带宽部分</li>
-<li>在给定时间，只有一个载波带宽部分可以处于活动状态 </li>
-</ul>
+<li><p>执行<code>mkdir build</code></p>
 </li>
-<li><p>UE不得在活动带宽部分之外发送PUSCH或PUCCH</p>
+<li><p>执行<code>cd build</code>   </p>
 </li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/jxwxg/article/details/80201788">连接1</a></p>
-<p><a target="_blank" rel="noopener" href="https://rf.eefocus.com/article/id-333044">连接2</a></p>
+<li><p>执行<code>cmake ../</code>   完成后如下图</p>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photouhdcmake.png"></p>
+<ol start="6">
+<li>make -j4(-j4的意思是使用4线程，-j8 就是使用8线程编译) 完成后如下图</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photomakej4.png"></p>
+<ol start="7">
+<li>执行<code>make test -j4</code>  (这条命令可以省略，执行后可能会有一条错误，不影响使用) 完成后如下图</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photomaketest.png"></p>
+<ol start="8">
+<li>执行<code>sudo make install</code> 完成后如下图</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photomakeinstll.png"></p>
+<ol start="9">
+<li>设置环境变量 执行<code>sudo ldconfig</code></li>
+<li>在home目录下，打开<code>.bashrc</code>文件，在末尾添加(<code>.bashrc</code>被隐藏，可以使用ctrol+h显示出来)</li>
+</ol>
+<p><code>export LD_LIBRARY_PATH=/usr/local/lib</code></p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photouhdexport.png"></p>
+<p>到这里uhd的驱动已经安装完毕，可以在终端输入</p>
+<p><code>sudo uhd_find_devices</code> 显示如下图即成功安装（未插入usrp b210）</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photouhdfind.png"></p>
+<p><a target="_blank" rel="noopener" href="https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux">UHD安装的官方教程</a></p>
+<h3 id="安装uhd-image镜像"><a href="#安装uhd-image镜像" class="headerlink" title="安装uhd image镜像"></a>安装uhd image镜像</h3><p>下载对应版本的uhd_image 镜像，我安装的是uhd 4.0.0版本的驱动，所以需要使用 uhd_image 4.0.0版本的镜像</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photouhd_image.PNG"></p>
+<p>把解压后的image文件夹复制到<code>usr/local/share/uhd</code>文件夹内，</p>
+<p>插上usrp b210执行<code>sudo uhd_usrp_probe</code>  把镜像烧录进硬件b210  ，如下图安装就完成了</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photouhdprobe.png"></p>
+<p>插上usrp b210，再次运行<code>sudo uhd_find_devices</code>  显示结果如下</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photouhd%E5%AE%8C%E6%88%90.png"></p>
+<h2 id="编译与安装"><a href="#编译与安装" class="headerlink" title="编译与安装"></a>编译与安装</h2><h4 id="下载源码"><a href="#下载源码" class="headerlink" title="下载源码"></a>下载源码</h4><p>下载源码的方式有两种。一种是直接去<a target="_blank" rel="noopener" href="https://gitlab.eurecom.fr/oai/openairinterface5g/-/tree/master">OAI官网gitlab</a>下载压缩包。另一种是使用git bash下载。执行</p>
+<pre><code>sudo apt-get install git
+git clone https://gitlab.eurecom.fr/oai/openairinterface5g.git  (注意版本)</code></pre>
+<p>建议使用第一种方法，下载比较快</p>
+<p>注意：下载的时候要注意系统和版本的对应，ubuntu14.04 应该下载master分支。ubuntu 16.04应该下载v1.0.0之后的分支，我使用的是v1.1.1版本的源码（我的系统是ubuntu16.04)</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photov1.1.PNG"></p>
+<h4 id="接下来需要配置enb"><a href="#接下来需要配置enb" class="headerlink" title="接下来需要配置enb"></a>接下来需要配置enb</h4><p>下载后解压压缩包，进入根目录/targets/PROJECTS/GENERIC-LTE-EPC/CONF，打开enb.band7.tm1.50PRB.usrpb210.conf文件</p>
+<p>需要更改和确认的部分如下：前三行在MME中可以查到，之后就是把IP对应换成自己的EPC和eNB所在IP。如下</p>
+<pre><code>tracking_area_code  =  "1";
+mobile_country_code =  "208";
+mobile_network_code =  "92";
+
+
+// MME parameters:
+    mme_ip_address      = ( { ipv4       = "192.168.12.62";
+                              ipv6       = "192:168:30::17";
+                              active     = "yes";
+                              preference = "ipv4";
+                            }
+                          );
+    NETWORK_INTERFACES :
+    {
+        ENB_INTERFACE_NAME_FOR_S1_MME         = "eth0";
+        ENB_IPV4_ADDRESS_FOR_S1_MME           = "192.168.12.82/24";
+
+        ENB_INTERFACE_NAME_FOR_S1U            = "eth0";
+        ENB_IPV4_ADDRESS_FOR_S1U              = "192.168.12.82/24";
+        ENB_PORT_FOR_S1U                      = 2152; # Spec 2152
+    };</code></pre>
+<h4 id="编译enb"><a href="#编译enb" class="headerlink" title="编译enb"></a>编译enb</h4><p>进入源码根目录，右键，选择在终端打开，依次执行</p>
+<pre><code>source oaienv
+cd cmake_targets
+sudo ./build_oai -I -w USRP</code></pre>
+<p>在运行第三条命令，会出现下面的错误</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photoasn1cc%E9%94%99%E8%AF%AF.jpg"></p>
+<p>我们进入根目录/cmake_targets/tools文件夹下，打开build_helper文件。搜索（ctrol+f) asn1c,定位到如下图，注释掉下面三行，</p>
+<pre><code>$SUDO rm -rf /tmp/asn1c
+...
+git clone https://gitlab.eurecom.fr/oai/asn1c.git /tmp/asn1c
+git checkout 0a7524184f16e7093990a31d8d4db487a16e5782
+</code></pre>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E6%B3%A8%E9%87%8Aasn1c1.PNG"></p>
+<p>然后自己去下载asn1c  <a target="_blank" rel="noopener" href="https://gitlab.eurecom.fr/oai/asn1c.git">点击下载asn1c</a>     注意：一定要下载压缩包，不要使用git,不然编译不通过</p>
+<p>然后解压缩，把解压后的文件放到  tmp/asn1c文件夹下，（需自己新建asn1c，新建按钮可能灰色的，具体做法<a href="#1">点击这里</a>)</p>
+<h4 id="自己下载其他软件，加快编译速度"><a href="#自己下载其他软件，加快编译速度" class="headerlink" title="自己下载其他软件，加快编译速度"></a>自己下载其他软件，加快编译速度</h4><ol>
+<li>还是在build_helper文件内，注释掉第750和751行</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E6%B3%A8%E9%87%8A%E6%8E%89ssh.PNG"></p>
+<p>把ssh.py 放到 opt/ssh文件夹内。ssh.py下载链接在文章末尾的百度网盘分享中。</p>
+<ol start="2">
+<li>注释掉build_helper文件的219和220行</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E6%B3%A8%E9%87%8Aprotobuf.PNG"></p>
+<p>然后去<a target="_blank" rel="noopener" href="https://github.com/google/protobuf/releases/download/v3.3.0/protobuf-cpp-3.3.0.tar.gz">这里</a>下载protobuf-cpp-3.3.0.tar.gz压缩包，然后把压缩包放到/tmp文件夹下就行了</p>
+<ol start="3">
+<li>注释掉build_help文件的242，243和245行</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E6%B3%A8%E9%87%8Aprotobufc.PNG"></p>
+<p>然后去<a target="_blank" rel="noopener" href="https://github.com/protobuf-c/protobuf-c.git">这里</a>下载protobuf-c压缩包，把压缩包解压到 tmp/protobuf-c文件夹下，就行了。</p>
+<ol start="4">
+<li>我们在之前已经安装了usrp b210的驱动和镜像了，可以把安装驱动的代码删除了，删除build_helper的下面几个函数</li>
+</ol>
+<pre><code>install_usrp_uhd_driver_from_source(){
+...
+}
+
+
+
+install_usrp_uhd_driver() {
+...
+}
+</code></pre>
+<p>之后打开 根目录/cmake_targets中的build_oai文件，删除掉438行到441行</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photouhd%E9%A9%B1%E5%8A%A8%E4%B8%8B%E8%BD%BD%E5%99%A8.PNG"></p>
+<p>然后再次执行</p>
+<p><code>sudo ./build_oai -I -w USRP</code></p>
+<p>就会成功了</p>
+<h3 id="启动enb"><a href="#启动enb" class="headerlink" title="启动enb"></a>启动enb</h3><p>进入根目录下依次执行</p>
+<pre><code>source oaienv
+cd cmake_targets
+sudo./build_oai --eNB -c -w USRP (这条运行一次就行了 确认安装)
+cd lte_build_oai/build
+sudo -E ./lte-softmodem -O 源码目录/targets/PROJECTS/GENERIC-LTE-EPC/CONF/enb.band7.tm1.usrpb210.conf -d</code></pre>
 
             </div>
             <hr/>
@@ -534,7 +688,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xinmin.org/2020/11/14/2020-11-08-BWP/">https://xinmin.org/2020/11/14/2020-11-08-BWP/</a>
+                    <a href="https://xinmin.org/2020/11/16/OAIBuild/">https://xinmin.org/2020/11/16/OAIBuild/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -735,9 +889,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://xinmin.org/2020/11/14/2020-11-08-BWP/';
-        this.page.identifier = '/2020/11/14/2020-11-08-BWP/';
-        this.page.title = 'BWP（带宽部分）';
+        this.page.url = 'https://xinmin.org/2020/11/16/OAIBuild/';
+        this.page.identifier = '/2020/11/16/OAIBuild/';
+        this.page.title = 'OAI搭建教程';
     };
     let disqus_shortname = '';
 
@@ -769,13 +923,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-06-MATLAB/">
+                <a href="/2020/11/16/DNS/">
                     <div class="card-image">
                         
+                        <img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photoDNS.jpg" class="responsive-img" alt="修改DNS解决github pages打不开， 修改DNS提升网页打开速度">
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="函数使用方法记录">
-                        
-                        <span class="card-title">函数使用方法记录</span>
+                        <span class="card-title">修改DNS解决github pages打不开， 修改DNS提升网页打开速度</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -786,7 +939,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-16
                         </span>
                         <span class="publish-author">
                             
@@ -795,6 +948,18 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/DNS/">
+                        <span class="chip bg-color">DNS</span>
+                    </a>
+                    
+                    <a href="/tags/github-pages/">
+                        <span class="chip bg-color">github pages</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -806,13 +971,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-08-PDCCH/">
+                <a href="/2020/11/16/githubQuestion/">
                     <div class="card-image">
                         
+                        <img src="/(https:/raw.githubusercontent.com/xinminwang/imagehost/main/image/photoGitHub%E7%89%B9%E8%89%B2.jpg" class="responsive-img" alt="浏览器打不开github pages和无法从github下载图片">
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="PDCCH信道详解">
-                        
-                        <span class="card-title">PDCCH信道详解</span>
+                        <span class="card-title">浏览器打不开github pages和无法从github下载图片</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -823,7 +987,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-16
                             </span>
                         <span class="publish-author">
                             
@@ -832,6 +996,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/github/">
+                        <span class="chip bg-color">-github</span>
+                    </a>
+                    
                 </div>
                 
             </div>

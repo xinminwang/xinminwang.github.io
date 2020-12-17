@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xinmin.org/2020/11/16/githubQuestion/</loc>
+    <loc>https://xinmin.org/2020/11/16/OAIBuild/</loc>
     
-    <lastmod>2020-11-28</lastmod>
+    <lastmod>2020-12-17</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xinmin.org/2020/11/16/OAIBuild/</loc>
+    <loc>https://xinmin.org/2020/11/16/githubQuestion/</loc>
     
     <lastmod>2020-11-28</lastmod>
     
@@ -44,14 +44,14 @@
   </url>
   
   <url>
-    <loc>https://xinmin.org/2020/11/14/2020-11-10-markdown/</loc>
+    <loc>https://xinmin.org/2020/11/14/markdown/</loc>
     
     <lastmod>2020-11-13</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xinmin.org/2020/11/14/2020-11-08-PDCCH/</loc>
+    <loc>https://xinmin.org/2020/11/14/PDCCH/</loc>
     
     <lastmod>2020-11-13</lastmod>
     
@@ -100,21 +100,21 @@
   </url>
   
   <url>
-    <loc>https://xinmin.org/2020/11/14/2020-11-12-lianbiao/</loc>
+    <loc>https://xinmin.org/2020/11/14/lianbiao/</loc>
     
     <lastmod>2020-11-13</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xinmin.org/2020/11/14/2020-11-08-BWP/</loc>
+    <loc>https://xinmin.org/2020/11/14/BWP/</loc>
     
     <lastmod>2020-11-13</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xinmin.org/2020/11/14/2020-11-06-MATLAB/</loc>
+    <loc>https://xinmin.org/2020/11/14/MATLAB/</loc>
     
     <lastmod>2020-11-13</lastmod>
     
@@ -123,57 +123,57 @@
 
   <url>
     <loc>https://xinmin.org/</loc>
-    <lastmod>2020-11-28</lastmod>
+    <lastmod>2020-12-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://xinmin.org/tags/Typora/</loc>
-    <lastmod>2020-11-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xinmin.org/tags/Markdown/</loc>
-    <lastmod>2020-11-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xinmin.org/tags/DNS/</loc>
-    <lastmod>2020-11-28</lastmod>
+    <lastmod>2020-12-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://xinmin.org/tags/github-pages/</loc>
-    <lastmod>2020-11-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xinmin.org/tags/%E5%8A%A0%E9%80%9F%E5%99%A8/</loc>
-    <lastmod>2020-11-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xinmin.org/tags/v2ray/</loc>
-    <lastmod>2020-11-28</lastmod>
+    <lastmod>2020-12-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://xinmin.org/tags/github/</loc>
-    <lastmod>2020-11-28</lastmod>
+    <lastmod>2020-12-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xinmin.org/tags/Typora/</loc>
+    <lastmod>2020-12-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xinmin.org/tags/Markdown/</loc>
+    <lastmod>2020-12-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xinmin.org/tags/%E5%8A%A0%E9%80%9F%E5%99%A8/</loc>
+    <lastmod>2020-12-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xinmin.org/tags/v2ray/</loc>
+    <lastmod>2020-12-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

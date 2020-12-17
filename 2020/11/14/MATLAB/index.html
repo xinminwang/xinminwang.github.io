@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="markdown语法大全（超详细）, 新民之家">
+    <meta name="keywords" content="函数使用方法记录, 新民之家">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>markdown语法大全（超详细） | 新民之家</title>
+    <title>函数使用方法记录 | 新民之家</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -314,12 +314,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">markdown语法大全（超详细）</h1>
+                    <h1 class="description center-align post-title">函数使用方法记录</h1>
                 </div>
             </div>
         </div>
@@ -434,17 +434,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Typora/">
-                                <span class="chip bg-color">Typora</span>
-                            </a>
-                        
-                            <a href="/tags/Markdown/">
-                                <span class="chip bg-color">Markdown</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -465,14 +457,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3k
+                    158
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    1 分
                 </div>
                 
 
@@ -487,413 +479,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>[toc]</p>
-<p>以下所有效果在 markdown 的typora编辑器和坚果云编辑器都能实现，但有些网站或编辑器不一定支持（如目录在github page 好像不支持）</p>
-<h1 id="关于换行"><a href="#关于换行" class="headerlink" title="关于换行"></a>关于换行</h1><blockquote>
-<p>由于markdown编辑器的不同,可能在一行字后面，直接换行回车，也能实现换行，但是在Visual Studio Code上，想要<strong>换行必须得在一行字后面空两个格子才行</strong></p>
-</blockquote>
-<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录<a name="目录"></a></h1><p>直接在需要插入目录的地方输入下面语法：</p>
-<pre class="line-numbers language-[toc]"><code class="language-[toc]">[TOC]        在typora编辑器中大小写都行，但在GitHub pages不可用<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>会自动按标题生成目录，效果如下：</p>
-<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/%E7%9B%AE%E5%BD%95.PNG" alt="目录" title="目录"></p>
-<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>语法如下（两种方法）：但在github pages 好像用一个#号没有使用二个##标题大啊</p>
-<pre><code># 一级标题//注意在#号和标题直接要有空格，有的编辑器没有空格也能产生效果，应该只支持六级标题，往后不支持了
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题 
-还有一种：在标题下加=或-
-一级标题
-====================
-二级标题
-===============
-三级标题
-------------------</code></pre>
-<p>效果如下：</p>
-<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/%E6%A0%87%E9%A2%98.PNG" alt="标题" title="标题"></p>
-<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><h2 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h2><p>把要加粗的文字两端分别用两个*或_号包起来，语法如下：</p>
-<pre><code>**要加粗的字体**
-__要加粗的字体__</code></pre>
-<p><strong>要加粗的字体</strong></p>
-<p><strong>要加粗的字体</strong></p>
-<h2 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h2><p>把要使用斜体的文字两端分别用一个*或_号包起来，语法如下：</p>
-<pre><code>*斜体文字*
-_斜体文字_</code></pre>
-<p>效果如下：</p>
-<p><em>斜体文字</em></p>
-<p><em>斜体文字</em></p>
-<h2 id="斜体加粗"><a href="#斜体加粗" class="headerlink" title="斜体加粗"></a>斜体加粗</h2><p>把要倾斜和加粗的文字两端分别用三个*号或_包起来,语法如下：</p>
-<pre><code>***斜体加粗***
-___斜体加粗___</code></pre>
-<p>效果如下：</p>
-<p><strong><em>斜体加粗</em></strong></p>
-<p><strong><em>斜体加粗</em></strong></p>
-<h2 id="删除线（中划线）"><a href="#删除线（中划线）" class="headerlink" title="删除线（中划线）"></a>删除线（中划线）</h2><p>把要加删除线的文字两端分别用两个~~号包起来，语法如下：</p>
-<pre><code>~~要删除的文字~~</code></pre>
-<p>效果如下：</p>
-<p><del>要删除的文字</del></p>
-<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>把要加下滑线的文字两端用<u></u>包起来（行内html写法），语法如下：</p>
-<pre><code>&lt;u&gt;下划线&lt;/u&gt;</code></pre>
-<p>效果如下：</p>
-<p><u>下划线</u></p>
-<h2 id="借助Latex公式实现上下线和下划线"><a href="#借助Latex公式实现上下线和下划线" class="headerlink" title="借助Latex公式实现上下线和下划线"></a>借助Latex公式实现上下线和下划线</h2><p>语法如下：</p>
-<pre><code>$\overline{\text{上划线}}$
-$\underline{\text{下划线}}$</code></pre>
-<p>效果如下：</p>
-<p>$\overline{\text{上划线}}$</p>
-<p>$\underline{\text{下划线}}$</p>
-<h2 id="高亮"><a href="#高亮" class="headerlink" title="高亮"></a>高亮</h2><p>把要高亮的文字两端分别用两个==号包起来，语法如下：</p>
-<pre><code>==高亮==</code></pre>
-<p>效果如下：</p>
-<p>==高亮==</p>
-<h2 id="上标"><a href="#上标" class="headerlink" title="上标"></a>上标</h2><p>把要设置上标的文字两端分别用一个^号包起来，语法如下：</p>
-<pre><code>X^2^</code></pre>
-<p>效果如下：</p>
-<p>X^2^</p>
-<h2 id="下标"><a href="#下标" class="headerlink" title="下标"></a>下标</h2><p>把要设置下标的文字两端分别用一个~号包起来，语法如下：</p>
-<pre><code>H~2O~</code></pre>
-<p>效果如下：</p>
-<p>H<del>2O</del></p>
-<h2 id="文字和图像居中"><a href="#文字和图像居中" class="headerlink" title="文字和图像居中"></a>文字和图像居中</h2><blockquote>
-<p>文字居中可以使用使用下面这对标签包裹，语法如下：</p>
-</blockquote>
-<pre><code>&lt;center&gt;要居中的文字&lt;/center&gt;</code></pre>
-<p>效果如下：</p>
-<center>要居中的文字</center>
-
-<blockquote>
-<p>图片居中 语法如下：</p>
-</blockquote>
-<pre><code>&lt;img style="display: block; margin: 50 auto;" src="G:\desktop\图片啊发啊.PNG" alt="" /&gt;</code></pre>
-<p>效果如下：</p>
-<img style="display: block; margin: 50 auto;" src="G:\desktop\图片啊发啊.PNG" alt="">
-
-
-
-<h2 id="上述语法的效果图"><a href="#上述语法的效果图" class="headerlink" title="上述语法的效果图"></a>上述语法的效果图</h2><p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/%E5%AD%97%E4%BD%931.PNG" alt="字体1" title="字体格式"></p>
+                <h1 id="MATLAB函数使用方法记录"><a href="#MATLAB函数使用方法记录" class="headerlink" title="MATLAB函数使用方法记录"></a>MATLAB函数使用方法记录</h1><pre><code>fseek(fid,offset,origin)//常与ftell连用（ftell用于返回文件指针的位置）</code></pre>
+<h4 id="fid-是文件句柄，offset-是指针距离orgin（参考指针位置）的偏移量"><a href="#fid-是文件句柄，offset-是指针距离orgin（参考指针位置）的偏移量" class="headerlink" title="fid 是文件句柄，offset 是指针距离orgin（参考指针位置）的偏移量"></a>fid 是文件句柄，offset 是指针距离orgin（参考指针位置）的偏移量</h4><p>offset &gt;0 向文件末尾移动</p>
+<p>offset=0 不偏移</p>
+<p>offset&lt;0 向文件开始的位置偏移</p>
+<h4 id="offset-是指针的参照位置"><a href="#offset-是指针的参照位置" class="headerlink" title="offset 是指针的参照位置"></a>offset 是指针的参照位置</h4><p>bof或-1 表示文件的开端位置</p>
+<p>cof或0 表示文件的当前位置</p>
+<p>eof或1 表示文件的末尾</p>
+<p>这个和c语言有点不同</p>
+<p>seek_set或0 表示文件的开端</p>
+<p>seek_cur 表示文件的当前位置</p>
+<p>seek_end 表示文件的末尾</p>
 <hr>
-<h2 id="字体颜色和背景颜色设置"><a href="#字体颜色和背景颜色设置" class="headerlink" title="字体颜色和背景颜色设置"></a>字体颜色和背景颜色设置</h2><h3 id="字体颜色（使用行内html）"><a href="#字体颜色（使用行内html）" class="headerlink" title="字体颜色（使用行内html）"></a>字体颜色（使用行内html）</h3><p>设置字体颜色，语法如下：</p>
-<pre><code>&lt;font color="#BC1717"&gt;想要设置颜色的文字&lt;/font&gt;
-通过更改#号后面的值，更改字体的颜色，上述是红色</code></pre>
-<p><font color="#BC1717">想要设置颜色的文字</font></p>
-<p>设置字体颜色同时设置字体加粗，语法如下：</p>
-<pre><code>&lt;font color="#117113" style="font-weight:1000;"&gt;想要设置的字体颜色和字体加粗的文字!&lt;/font&gt;</code></pre>
-<p>上面这条语法效果图如下：</p>
-<p><font color="#117113" style="font-weight:1000;">想要设置的字体颜色和字体加粗的文字!</font></p>
-<p>设置字体颜色和指定位置背景颜色，语法如下：</p>
-<pre><code>&lt;div style="width:100px;height:100px;background:#000;text-align:center;line-height:100px;"&gt;   //这条语法是设置指定位置的背景颜色
-&lt;p&gt;&lt;font color="#e6de22"&gt;黄&lt;/font&gt;&lt;/p&gt;   //这条语法是设置字体颜色
-&lt;/div&gt;</code></pre>
-<p>效果图如下：</p>
-<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/%E6%8C%87%E5%AE%9A%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2.PNG" title="指定背景颜色"></p>
-<p>设置字体背景颜色</p>
-<pre><code>&lt;table&gt;
-    &lt;td bgcolor=#FFFF0&gt;
-        &lt;font color="#FF0000"&gt;想要设置字体颜色和背景颜色的文字&lt;/font&gt;
-    &lt;/td&gt;
-&lt;/table&gt;</code></pre>
-<p>效果图如下：</p>
-<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2.PNG" title="设置背景颜色"></p>
-<hr>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;或三个&gt;&gt;&gt;等，语法如下：</p>
-<pre><code>&gt; 一级引用
-&gt;&gt; 二级引用
-&gt;&gt;&gt; 三级引用
-&gt;&gt;&gt;&gt; 四级引用
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; n级引用</code></pre>
-<p>效果如下：</p>
-<blockquote>
-<p>一级引用</p>
-<blockquote>
-<p>二级引用</p>
-<blockquote>
-<p>三级引用</p>
-<blockquote>
-<p>四级引用</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>n级引用</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<hr>
-<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p>有二种方法，语法如下</p>
-<pre><code>----------------             第一种方法，三个或三个以上“-”就行
-****************             第二种方法，三个或三个以上“*”就行
-</code></pre>
-<p>效果图如下：</p>
-<hr>
-<h1 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h1><p>有二种方法：一种是行内式，一种是参考式</p>
-<p>语法如下：</p>
-<pre><code>![图片名]（图片地址 "图片描述"）
-例如![百度](https://www.baidu.com)或![图片](C:\Users\王新民\Pictures\分割线.PNG)
-
-第二种：注意第二行可以放在文章的任何位置，当图片多时方便统一管理，标记可以是数组或字母如[1]或[abc],但两行的标记要保持一致
-
-![图片][标记]
-[标记]:C:\Users\王新民\Pictures\分割线.PNG "图片描述"
-
-tips:可以使用html语法，对图片进行缩放，语法如下：
-&lt;img src="C:\Users\王新民\Pictures\标题.PNG" style="zoom:75%;" /&gt;
-</code></pre>
-<p>效果如下：</p>
-<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A51.PNG" alt="方法一" title="方法1"></p>
-<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A52.PNG" alt="方法二" title="方法2"></p>
-<hr>
-<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p>链接和图片一样，有行内式和参考式两种，语法如下：</p>
-<pre><code>[可点击的文字](链接地址 "鼠标放在链接上出现的文字")      如[百度][https://www.baidu.com "百度"]
-
-第二种：注意第二行可以放在文章的任何位置，当链接过多时，方便统一管理。标记可以是数组或字母如[1]或[abc],但两行的标记要保持一致
-
-[可点击的文字][标记]
-[标记]:链接地址 "鼠标放在链接上出现的文字" 
-
-
-tips:使用html插入链接，并在新的标签页打开（target="_blank")，语法如下：
-&lt;a href="https://www.baidu.com" title="悬浮提示信息" target="_blank" rel="nofollow"&gt;百度&lt;/a&gt;</code></pre>
-<p>效果如下：</p>
-<p>第一种：行内式</p>
-<p><a target="_blank" rel="noopener" href="https://www.baidu.com/" title="第一种行内式">百度</a></p>
-<p>第二种：参考式</p>
-<p><a target="_blank" rel="noopener" href="https://www.baidu.com/" title="第二种参考式">百度</a></p>
-<h3 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h3><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接</p>
-<p>语法有两种：如下</p>
-<pre><code>&lt;http://example.com&gt;    第一种不显示&lt;&gt;
-
-&amp;lt;http://example.com&amp;gt;   第二种github pages等不适用。特殊字符&amp;lt;显示为&lt;  字符&amp;gt;显示为&gt;  所以显示为&lt;http://example.com&gt;
-</code></pre>
-<p>效果如下：</p>
-<p><a target="_blank" rel="noopener" href="http://example.com/">http://example.com</a></p>
-<p>&lt;<a target="_blank" rel="noopener" href="https://baidu.com/">https://baidu.com/</a>&gt;</p>
-<h1 id="Markdown-Emoji表情"><a href="#Markdown-Emoji表情" class="headerlink" title="Markdown Emoji表情"></a>Markdown Emoji表情</h1><p><a target="_blank" rel="noopener" href="https://www.webfx.com/tools/emoji-cheat-sheet/">语法表格</a></p>
-<p><a target="_blank" rel="noopener" href="https://api.github.com/emojis">github API</a></p>
-<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><p>在需要做成无序列表的每行文字前添加+或-或*，语法如下</p>
-<pre><code>- 情况1
-+ 情况2
-* 情况3</code></pre>
-<p>效果如下：</p>
-<ul>
-<li>情况1</li>
-</ul>
-<ul>
-<li>情况2</li>
-<li>情况3</li>
-</ul>
-<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><p>数字后加点，语法如下：注意在点与文字之间有个空格</p>
-<pre><code>1. 情况1
-2. 情况2
-3. 情况3</code></pre>
-<p>效果如下：</p>
-<ol>
-<li>情况1</li>
-<li>情况2</li>
-<li>情况3</li>
-</ol>
-<h2 id="待办列表"><a href="#待办列表" class="headerlink" title="待办列表"></a>待办列表</h2><p>语法如下：注意在-和[]之间有个空格，在[]和文字之间有个空格，[ ]内如果是空格是未勾选，如果是[x]表示勾选(x大小写都行)</p>
-<pre><code>-[ ] 未办事件
--[x] 完成事件</code></pre>
-<p>效果如下：</p>
-<ul>
-<li><p><input disabled="" type="checkbox">  未办事件</p>
-</li>
-<li><p><input checked="" disabled="" type="checkbox">  完成事件</p>
-</li>
-</ul>
-<h2 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h2><blockquote>
-<p>自定义型列表由名词和解释组成。一行写上定义，紧跟一行写上解释。解释的写法 一个冒号:紧跟一个缩进(Tab)或4个空格(有些不支持这种语法)</p>
-</blockquote>
-<p>语法如下：</p>
-<pre><code>markdown
-:    内容1
-java
-:    内容1
-:    内容2</code></pre>
-<dl><dt>markdown<br>:    内容1<br>java<br>:    内容1</dt><dd>内容2</dd></dl><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><p>语法如下：</p>
-<pre><code>|表头1|表头2|表头3|
-|:--:|:--:|:--:|
-|内容1|内容2|内容3|
-|内容4|内容5|内容6|
-
-第二行是为了分割表头和内容
-第二行中的“-”，有一个就行了，可以多加几个对齐，好看。
-第二行中的“：” 是控制内容和表头是否居中，不加两边的：默认居左
-两边都加：表示居中，在左边添加：表示居左，在右边添加：表示居右</code></pre>
-<p>效果如下：</p>
-<table>
-<thead>
-<tr>
-<th align="center">表头1</th>
-<th align="center">表头2</th>
-<th align="center">表头3</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">内容1</td>
-<td align="center">内容2</td>
-<td align="center">内容3</td>
-</tr>
-<tr>
-<td align="center">内容4</td>
-<td align="center">内容5</td>
-<td align="center">内容6</td>
-</tr>
-</tbody></table>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><h2 id="单行代码"><a href="#单行代码" class="headerlink" title="单行代码"></a>单行代码</h2><p>把单行代码的两端分别用单个 `  包裹起来语法如下：</p>
-<pre><code>`代码内容`</code></pre>
-<p>效果如下：</p>
-<p><code>代码内容</code></p>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块<a name="锚点标记"></a></h2><p>如果是多行代码，代码块开头结尾分别用三个```包裹起来，语法如下：</p>
-<pre><code></code></pre>
-<p>代码行1<br>代码行2<br>代码行3</p>
-<pre><code></code></pre>
-<p>效果如下：</p>
-<pre><code>代码行1
-代码行2
-代码行3</code></pre>
-<h1 id="锚点"><a href="#锚点" class="headerlink" title="锚点"></a>锚点</h1><p>锚点分两步：第一步设置锚点（转到的位置），第二步设置要点击的按钮（点击这个按钮，就跳转到第一步的位置），语法如下：</p>
-<pre><code>&lt;a name="锚点标记"&gt;锚点描述&lt;/a&gt;    这是第一步，通常锚点描述省略，即&lt;a name="锚点标记"&gt;&lt;/a&gt;
-&lt;a href="#锚点标记"&gt;跳转描述&lt;/a&gt;   这是第二步，注意跳转描述不能省略，不然没有点击按钮了
-
-#号后面的锚点标记要和name后面的锚点标记一直</code></pre>
-<p>效果如下：</p>
-<p><a href="#锚点标记">跳转到代码块处</a> </p>
-<h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><p>脚注和锚点有点相似，分两步：第一步设置脚注标记，第二步设置脚注的解释内容和位置（一般都放在文章的末尾）</p>
-<p>语法如下：</p>
-<pre><code>一段文字[^脚注标记]                第一步设置脚注标记
-
-[^脚注标记]:对脚注的解释内容     第二步设置脚注的解释内容和位置</code></pre>
-<p>效果如下：</p>
-<p>爱因斯坦[^1]是一个伟大的物理学家</p>
-<h1 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h1><p>语法如下：分两步：第一步：定义缩写词，第二步使用缩写词。缩写词的定义可以放在使用缩写词后面。</p>
-<pre><code>使用缩写词                        使用缩写词
-
-*[缩写词]:缩写词的全部拼写            定义缩写词
-
-例如
-
-5G的名字是NR。
-
-*[NR]:NEW RADIO</code></pre>
-<p>效果如下：(坚果云支持，typora好像不支持)</p>
-<p>5G的缩写是：NR</p>
-<p>*[NR]:NEW RADIO</p>
-<h1 id="语言标注"><a href="#语言标注" class="headerlink" title="语言标注"></a>语言标注</h1><p>语法如下：在代码块开端```之后加上语言就行了（）</p>
-<pre><code>​```javascript
-    var foo= 'bar'</code></pre>
-<pre><code>
-效果如下：
-
-​```javascript
-    var foo= 'bar'</code></pre>
-<h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>有些字符直接打印在屏幕上时，不代表本身含义，如：+ 加号 - 等，如果直接写+ 它会显示无序列表，而不是+，这时需要转义字符\</p>
-<p>语法如下：</p>
-<pre><code>\要表示的字符    如要打印\ 则应该写 \\(第一个\把第二个\转义为\)
- 如\+  \把+转义为+ 而不是无序列表</code></pre>
-<p>效果如下：</p>
-<p>\</p>
-<p>+</p>
-<h1 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h1><p>字符的代码一定要带后面的分号;</p>
-<p>常用字符表</p>
-<table>
-<thead>
-<tr>
-<th align="center">特殊字符</th>
-<th align="center">描述</th>
-<th align="center">字符的代码</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="center">空格符</td>
-<td align="center"><code>&amp;nbsp;</code>或<code>&amp;emsp;</code></td>
-</tr>
-<tr>
-<td align="center">&lt;</td>
-<td align="center">小于号</td>
-<td align="center"><code>&amp;lt;</code></td>
-</tr>
-<tr>
-<td align="center">&gt;</td>
-<td align="center">大于号</td>
-<td align="center"><code>&amp;gt;</code></td>
-</tr>
-<tr>
-<td align="center">&amp;</td>
-<td align="center">和号</td>
-<td align="center"><code>&amp;amp;</code></td>
-</tr>
-<tr>
-<td align="center">￥</td>
-<td align="center">人民币</td>
-<td align="center"><code>&amp;yen;</code></td>
-</tr>
-<tr>
-<td align="center">©</td>
-<td align="center">版权</td>
-<td align="center"><code>&amp;copy;</code></td>
-</tr>
-<tr>
-<td align="center">®</td>
-<td align="center">注册商标</td>
-<td align="center"><code>&amp;reg;</code></td>
-</tr>
-<tr>
-<td align="center">°C</td>
-<td align="center">摄氏度</td>
-<td align="center"><code>&amp;deg;C</code></td>
-</tr>
-<tr>
-<td align="center">±</td>
-<td align="center">正负号</td>
-<td align="center"><code>&amp;plusmn;</code></td>
-</tr>
-<tr>
-<td align="center">×</td>
-<td align="center">乘号</td>
-<td align="center"><code>&amp;times;</code></td>
-</tr>
-<tr>
-<td align="center">÷</td>
-<td align="center">除号</td>
-<td align="center"><code>&amp;divide;</code></td>
-</tr>
-<tr>
-<td align="center">²</td>
-<td align="center">平方</td>
-<td align="center"><code>&amp;sup2;</code></td>
-</tr>
-<tr>
-<td align="center">³</td>
-<td align="center">三次方</td>
-<td align="center"><code>&amp;sup3;</code></td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>更多字符请点击<a target="_blank" rel="noopener" href="https://dev.w3.org/html5/html-author/charref">here</a>或者<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/xinminwang/picture-host/main/html%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E5%A4%A7%E5%85%A8.docx">here</a></p>
-</blockquote>
-<h1 id="markdown进阶"><a href="#markdown进阶" class="headerlink" title="markdown进阶"></a>markdown进阶</h1><h2 id="添加音乐模块"><a href="#添加音乐模块" class="headerlink" title="添加音乐模块"></a>添加音乐模块</h2><p>语法如下：</p>
-<pre><code>&lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&amp;id=1361144868&amp;auto=0&amp;height=66"&gt;&lt;/iframe&gt;</code></pre>
-<p>效果如下：</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1361144868&amp;auto=0&amp;height=66"></iframe>
-
-
-
-<h2 id="添加视频"><a href="#添加视频" class="headerlink" title="添加视频"></a>添加视频</h2><p>代码如下：</p>
-<pre><code>&lt;a href="网址" target="_blank"&gt;&lt;img src="视频封面图片网址" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /&gt;&lt;/a&gt;</code></pre>
-<p>效果如下：</p>
-<p><a href="https://m.youtube.com/watch?v=Gz7WMF4wWko" target="_blank"><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/Youtube.jpg" alt="Youtube视频" width="240" height="180" border="10"></a></p>
-<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><p>后续更新</p>
-<h2 id="内联公式"><a href="#内联公式" class="headerlink" title="内联公式"></a>内联公式</h2><p>后续更新</p>
-<p><a href="#目录">回到目录</a></p>
-<p>[^1]:阿尔伯特·爱因斯坦（德语/英语：Albert Einstein）（1879年3月14日—1955年4月18日），出生于德国巴登－符腾堡州乌尔姆市，毕业于苏黎世联邦理工学院，现代物理学家</p>
 
             </div>
             <hr/>
@@ -919,7 +516,7 @@ java
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xinmin.org/2020/11/14/2020-11-10-markdown/">https://xinmin.org/2020/11/14/2020-11-10-markdown/</a>
+                    <a href="https://xinmin.org/2020/11/14/MATLAB/">https://xinmin.org/2020/11/14/MATLAB/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -956,15 +553,7 @@ java
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/Typora/">
-                                    <span class="chip bg-color">Typora</span>
-                                </a>
-                            
-                                <a href="/tags/Markdown/">
-                                    <span class="chip bg-color">Markdown</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -1128,9 +717,9 @@ java
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://xinmin.org/2020/11/14/2020-11-10-markdown/';
-        this.page.identifier = '/2020/11/14/2020-11-10-markdown/';
-        this.page.title = 'markdown语法大全（超详细）';
+        this.page.url = 'https://xinmin.org/2020/11/14/MATLAB/';
+        this.page.identifier = '/2020/11/14/MATLAB/';
+        this.page.title = '函数使用方法记录';
     };
     let disqus_shortname = '';
 
@@ -1162,13 +751,13 @@ java
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-08-PDCCH/">
+                <a href="/2020/11/14/BWP/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="PDCCH信道详解">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="BWP（带宽部分）">
                         
-                        <span class="card-title">PDCCH信道详解</span>
+                        <span class="card-title">BWP（带宽部分）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1199,13 +788,13 @@ java
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-12-lianbiao/">
+                <a href="/2020/11/14/PDCCH/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="建立任何类型链表">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="PDCCH信道详解">
                         
-                        <span class="card-title">建立任何类型链表</span>
+                        <span class="card-title">PDCCH信道详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">

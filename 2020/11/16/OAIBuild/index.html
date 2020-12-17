@@ -457,14 +457,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.9k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    8 分
                 </div>
                 
 
@@ -502,6 +502,9 @@ sudo dpkg -i linux-image-4.8.0-040800-lowlatency_4.8.0-040800.201610022031_amd64
 <p>在GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”这行的下面添加,并把这行注释掉</p>
 <pre><code>GRUB_CMDLINE_LINUX_DEFAULT="quiet splash quiet intel_pstate=disable processor.max_cstate=1 intel_idle.max_cstate=0 idle=poll"</code></pre>
 <p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photo%E7%94%B5%E6%BA%90%E7%AC%AC%E4%B8%80%E6%AD%A5.png"></p>
+<p>在依次执行</p>
+<pre><code>sudo update-grub
+sudo reboot</code></pre>
 <h4 id="将-intel-powerclamp（Intel-电源管理驱动程序）加入黑名单"><a href="#将-intel-powerclamp（Intel-电源管理驱动程序）加入黑名单" class="headerlink" title="将 intel_powerclamp（Intel 电源管理驱动程序）加入黑名单"></a>将 intel_powerclamp（Intel 电源管理驱动程序）加入黑名单</h4><p>执行<code>sudo gedit /etc/modprobe.d/blacklist.conf</code></p>
 <p>在文件末尾添加</p>
 <p><code>blacklist intel_powerclam</code></p>
@@ -538,7 +541,11 @@ sudo /etc/init.d/cpufrequtils restart</code></pre>
 <h4 id="从GitHub获取源代码"><a href="#从GitHub获取源代码" class="headerlink" title="从GitHub获取源代码"></a>从GitHub获取源代码</h4><p>方法1：运行<code>git clone https://github.com/EttusResearch/uhd.git</code></p>
 <p>方法2：直接去github上下载 tar.gz压缩包解压即可（我是下载的mater分支的压缩包（即uhd-master.tar.gz）版本是uhd 4.0.0）解压后目录如下图</p>
 <p><img src="https://raw.githubusercontent.com/xinminwang/imagehost/main/image/photouhd%E8%A7%A3%E5%8E%8B%E5%90%8E%E7%9A%84%E7%9B%AE%E5%BD%95.PNG"></p>
-<h4 id="安装uhd驱动"><a href="#安装uhd驱动" class="headerlink" title="安装uhd驱动"></a>安装uhd驱动</h4><ol>
+<h4 id="安装uhd驱动"><a href="#安装uhd驱动" class="headerlink" title="安装uhd驱动"></a>安装uhd驱动</h4><p>首先安装依赖：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> libboost-all-dev libusb-1-0-0-dev python-cheetah doxygen python-docutils g++ cmake python-setuptools python-mako<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>或者下面这个依赖（没试过）</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> python boost libusb-devel libusbx-devel boost-devel python-mako python-docutils cmake<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ol>
 <li><p>进入源代码根目录：</p>
 </li>
 <li><p>执行<code>cd host</code></p>

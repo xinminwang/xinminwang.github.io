@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="建立任何类型链表, 新民之家">
+    <meta name="keywords" content="PDCCH信道详解, 新民之家">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>建立任何类型链表 | 新民之家</title>
+    <title>PDCCH信道详解 | 新民之家</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -314,12 +314,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">建立任何类型链表</h1>
+                    <h1 class="description center-align post-title">PDCCH信道详解</h1>
                 </div>
             </div>
         </div>
@@ -457,14 +457,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    854
+                    17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -479,91 +479,8 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="结构体的定义"><a href="#结构体的定义" class="headerlink" title="结构体的定义"></a>结构体的定义</h2><ol>
-<li>当结构体使用如下定义一个指向结构的指针时。</li>
-</ol>
-<pre><code>struct node                    
-{                                    
-    int value;                        
-    struct node *next;                
-} *NODE;
-</code></pre>
-<p>在使用NODE这个结构体指针时需要分配内存，即在函数中需要对NODE分配内存才能使用。</p>
-<pre><code>int main(void)
-{
-    NODE=(node *)malloc(sizeof(struct node)) //并强转为指向node的指针
-    return 0;
-}</code></pre>
-<hr>
-<ol start="2">
-<li>当结构体使用typedef 把结构体指针重新定义为一种结构体指针时（也就是使用typedef 把结构体指针重新定义为一种类型，这个类型就是**==链表==**）</li>
-</ol>
-<pre><code>typedef struct node                    
-{                                    
-    int value;                        
-    struct node *next;                
-} *NODE;</code></pre>
-<p><strong>使用这个链表（现在这个链表是一种类型，不能直接使用，要使用此类型定义一个链表变量)时，NODE lianbiao;最重要的是对这个链表分配动态内存并强转为链表对应的类型。（因为此变量是NODE类型，所以强转时变为NODE类型）</strong></p>
-<pre><code>int main(void)
-{
-    NODE lianbiao;
-    lianbiao=(NODE)malloc(sizeof(struct node));
-    //接下来就可以使用lianbiao了
-    return 0;
-}</code></pre>
-<ol start="3">
-<li><p>当使用#define定义一种可以创建任何类型的链表时，要使用 define 和typedef同时使用 define 要替换的内容必须在同一行（如果替换的内容覆盖多行，必须使用连字符，即“\”</p>
-<p><strong>定义一种链表后，也必须先用这种链表类型定义一个变量，然后对变量分配动态内存并强转为这个变量对应的链表类型</strong></p>
-</li>
-</ol>
-<pre><code>#define LIST(T) typedef struct node    {T value;struct node *next;} *NODE;
-//使用define的替换功能定义一种可以时任何类型的链表（通过参量T输入想要的类型）
-//define所替换的内容必须在同一行如果替换的内容覆盖多行可以使用连字符,即 “\”。上面的那句可以替换成下面的写法
-
-#define LIST(T) typedef \
-struct node                \
-{                        \
-    T value;            \
-    struct node *next;    \
-} *NODE;
-</code></pre>
-<p>下面时如何使用各种类型的链表</p>
-<pre><code>int main(void)
-{
-    LIST(int);//被替换成typedef struct node    {int value;struct node *next;} *NODE;      int链表类型定义
-    NODE lianbiao; 使用int类型链表，定义一个链表（变量）。
-    lianbiao=(NODE)malloc(sizeof(struct node));//对这个链表（变量）分配动态内存，并强转为NODE类型的链表（强转为定义这个链表（变量）的类型）
-    //下面使用这个链表
-    lianbiao-&gt;value=8;
-    printf("%d",lianbiao-&gt;value);
-
-
-
-    LIST(char);//被替换为typedef struct node    {char value;struct node *next;} *NODE;  char链表类型定义
-    NODE lianbiao1; //使用char类型链表，定义一个链表（变量）。
-    lianbiao1=(NODE)malloc(sizeof(struct node));//对这个链表（变量）分配动态内存，并强转为NODE类型的链表（强转为定义这个链表（变量）的类型）
-    //下面使用这个链表
-    lianbiao1-&gt;value='a';
-    printf("%c",lianbiao1-&gt;value);
-
-
-
-    typedef int nihao;
-    LIST(nihao);//被替换为typedef struct node    {nihao value;struct node *next;} *NODE;  nihao链表类型定义
-    NODE lianbiao2; //使用char类型链表，定义一个链表（变量）。
-    lianbiao2=(NODE)malloc(sizeof(struct node));//对这个链表（变量）分配动态内存，并强转为NODE类型的链表（强转为定义这个链表（变量）的类型）
-    //下面使用这个链表
-    nihao a;
-    scanf("%d",&amp;a);
-    lianbiao2-&gt;value=a;
-    printf("%d",lianbiao2-&gt;value);
-
-
-    return 0;
-}</code></pre>
-<p><strong>注意上面三条LIST(T) 不能同时出现在同一个函数，不然会报错重定义NODE</strong></p>
-<p>下面时这三个链表建立和使用的程序，<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/xinminwang/picture-host/main/document/2020-11-12-%E5%BB%BA%E7%AB%8B%E4%BB%BB%E4%BD%95%E7%B1%BB%E5%9E%8B%E9%93%BE%E8%A1%A8.cpp">下载文件</a></p>
-<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/2020-11-12-%E5%BB%BA%E7%AB%8B%E4%BB%BB%E4%BD%95%E7%B1%BB%E5%9E%8B%E7%9A%84%E9%93%BE%E8%A1%A8.png" alt="2020-11-12-建立任何类型的链表"></p>
+                <h1 id="PDCCH信道详解"><a href="#PDCCH信道详解" class="headerlink" title="PDCCH信道详解"></a>PDCCH信道详解</h1><p>pdcch承载的是dci信息</p>
+<h2 id="试试表情功能"><a href="#试试表情功能" class="headerlink" title="试试表情功能"></a>试试表情功能</h2><p><span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
 
             </div>
             <hr/>
@@ -589,7 +506,7 @@ struct node                \
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xinmin.org/2020/11/14/2020-11-12-lianbiao/">https://xinmin.org/2020/11/14/2020-11-12-lianbiao/</a>
+                    <a href="https://xinmin.org/2020/11/14/PDCCH/">https://xinmin.org/2020/11/14/PDCCH/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -790,9 +707,9 @@ struct node                \
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://xinmin.org/2020/11/14/2020-11-12-lianbiao/';
-        this.page.identifier = '/2020/11/14/2020-11-12-lianbiao/';
-        this.page.title = '建立任何类型链表';
+        this.page.url = 'https://xinmin.org/2020/11/14/PDCCH/';
+        this.page.identifier = '/2020/11/14/PDCCH/';
+        this.page.title = 'PDCCH信道详解';
     };
     let disqus_shortname = '';
 
@@ -824,13 +741,13 @@ struct node                \
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-10-markdown/">
+                <a href="/2020/11/14/MATLAB/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="markdown语法大全（超详细）">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="函数使用方法记录">
                         
-                        <span class="card-title">markdown语法大全（超详细）</span>
+                        <span class="card-title">函数使用方法记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -852,28 +769,16 @@ struct node                \
                     </div>
                 </div>
                 
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Typora/">
-                        <span class="chip bg-color">Typora</span>
-                    </a>
-                    
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
-                </div>
-                
             </div>
         </div>
         
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/14/2020-11-12-lianbiao/">
+                <a href="/2020/11/14/lianbiao/">
                     <div class="card-image">
                         
                         
@@ -900,7 +805,6 @@ struct node                \
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

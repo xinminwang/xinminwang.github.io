@@ -3,11 +3,11 @@
   <title>新民之家</title>
   
   <subtitle>新民之家</subtitle>
-  <link href="https://xinmin.org/atom.xml" rel="self"/>
+  <link href="https://xinminwang.github.io/atom.xml" rel="self"/>
   
-  <link href="https://xinmin.org/"/>
+  <link href="https://xinminwang.github.io/"/>
   <updated>2021-11-09T02:31:06.718Z</updated>
-  <id>https://xinmin.org/</id>
+  <id>https://xinminwang.github.io/</id>
   
   <author>
     <name>王新民</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://xinmin.org/2021/11/09/hello-world/"/>
-    <id>https://xinmin.org/2021/11/09/hello-world/</id>
+    <link href="https://xinminwang.github.io/2021/11/09/hello-world/"/>
+    <id>https://xinminwang.github.io/2021/11/09/hello-world/</id>
     <published>2021-11-09T01:13:33.529Z</published>
     <updated>2021-11-09T02:31:06.718Z</updated>
     

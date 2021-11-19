@@ -37,6 +37,9 @@ $(function () {
 
     /**
      * 修复footer部分的位置，使得在内容比较少时，footer也会在底部.
+     * 获取窗口的高度与宽度:
+        var w=window.innerWidth;
+        var h=window.innerHeight;
      */
     let fixFooterPosition = function () {
         $('.content').css('min-height', window.innerHeight - 165);

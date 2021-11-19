@@ -6,7 +6,7 @@
   <link href="https://xinminwang.github.io/atom.xml" rel="self"/>
   
   <link href="https://xinminwang.github.io/"/>
-  <updated>2021-11-09T02:31:06.718Z</updated>
+  <updated>2021-11-19T06:26:13.328Z</updated>
   <id>https://xinminwang.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://xinminwang.github.io/2021/11/09/hello-world/"/>
     <id>https://xinminwang.github.io/2021/11/09/hello-world/</id>
     <published>2021-11-09T01:13:33.529Z</published>
-    <updated>2021-11-09T02:31:06.718Z</updated>
+    <updated>2021-11-19T06:26:13.328Z</updated>
     
     
       
@@ -34,6 +34,10 @@
     
     
     
+    
+    <category term="Typora" scheme="https://xinminwang.github.io/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="https://xinminwang.github.io/tags/Markdown/"/>
     
   </entry>
   

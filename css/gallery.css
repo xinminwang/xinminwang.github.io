@@ -1,5 +1,6 @@
 .gallery-wrapper{
     padding-top: 30px;
+	/*这个是设置相册到banner图的距离*/
   }
   .gallery-wrapper .gallery-box{
     padding: 5px !important;
@@ -25,6 +26,8 @@
     position: relative;
     background: center center no-repeat;
     -webkit-background-size: cover;
+	/*当背景图太大，而屏幕太小时，页面无法将图片显示完全，这时使用background-position或者background-repeat并没有效果，
+	而是使用-webkit-background-size，这个可以设置图片的宽度与高度，宽度一般是百分号，而高度用px*/
     background-size: cover;
   }
   

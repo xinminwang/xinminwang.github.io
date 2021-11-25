@@ -6,7 +6,7 @@
   <link href="https://xinminwang.github.io/atom.xml" rel="self"/>
   
   <link href="https://xinminwang.github.io/"/>
-  <updated>2021-11-19T06:26:13.328Z</updated>
+  <updated>2021-11-25T11:17:27.469Z</updated>
   <id>https://xinminwang.github.io/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://xinminwang.github.io/2021/11/09/hello-world/"/>
-    <id>https://xinminwang.github.io/2021/11/09/hello-world/</id>
-    <published>2021-11-09T01:13:33.529Z</published>
-    <updated>2021-11-19T06:26:13.328Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Typora" scheme="https://xinminwang.github.io/tags/Typora/"/>
-    
-    <category term="Markdown" scheme="https://xinminwang.github.io/tags/Markdown/"/>
-    
-  </entry>
   
   <entry>
     <title>git +hexo 搭建个人博客</title>

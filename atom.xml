@@ -6,7 +6,7 @@
   <link href="https://xinminwang.github.io/atom.xml" rel="self"/>
   
   <link href="https://xinminwang.github.io/"/>
-  <updated>2021-11-25T14:04:59.471Z</updated>
+  <updated>2021-12-06T12:39:40.078Z</updated>
   <id>https://xinminwang.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Proxmox VE折腾记录</title>
+    <link href="https://xinminwang.github.io/2021/12/01/proxmox-ve-zhe-teng-ji-lu/"/>
+    <id>https://xinminwang.github.io/2021/12/01/proxmox-ve-zhe-teng-ji-lu/</id>
+    <published>2021-12-01T09:54:28.000Z</published>
+    <updated>2021-12-06T12:39:40.078Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h1 id=&quot;Proxmox-VE-折腾记录&quot;&gt;&lt;a href=&quot;#Proxmox-VE-折腾记录&quot; class=&quot;headerlink&quot; title=&quot;Proxmox VE 折腾记录&quot;&gt;&lt;/a&gt;Proxmox VE 折腾记录&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>git +hexo 搭建个人博客</title>

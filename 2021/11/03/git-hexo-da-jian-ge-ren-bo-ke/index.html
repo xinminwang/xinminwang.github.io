@@ -31,9 +31,9 @@ git +hexo 搭建个人博客在设置github域名的时候，在dns解析时主�
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="新民之家" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="新民之家" type="application/atom+xml">
 </head>
 
 
@@ -598,7 +598,7 @@ git +hexo 搭建个人博客在设置github域名的时候，在dns解析时主�
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.4k
+                    5.5k
                 </div>
                 
 
@@ -772,6 +772,14 @@ lang:'&lt;%  {  %&gt;zh-cn&lt;% }  %&gt;',<span aria-hidden="true" class="line-n
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>所以需要在站点下的source/_data修改galleries.json文件</p>
+<h3 id="修复相册没有下边框"><a href="#修复相册没有下边框" class="headerlink" title="修复相册没有下边框"></a>修复相册没有下边框</h3><p>通过网页原代码，查看到相册下边框填充为0，如下图</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/hexo2.jpg"></p>
+<p>定位到gallery.css文件第57行</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/hexo.jpg"></p>
+<p>打开主题目录下source\css文件夹，修改如下图</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/hexo%E7%9B%B8%E5%86%8C%E4%BF%AE%E5%A4%8D.jpg"></p>
+<p>最终效果图如下</p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/hexo6.jpg"></p>
 <h2 id="重要下面修改背景图"><a href="#重要下面修改背景图" class="headerlink" title="重要下面修改背景图"></a>重要下面修改背景图</h2><pre class="line-numbers language-none"><code class="language-none">&lt;%- partial('_partial/bg-cover') %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
@@ -2027,7 +2035,7 @@ NaN
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">6.6k</span>
+                        class="white-color">6.7k</span>
             
             
             

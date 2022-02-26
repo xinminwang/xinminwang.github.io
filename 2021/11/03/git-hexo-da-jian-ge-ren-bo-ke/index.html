@@ -31,9 +31,9 @@ git +hexo 搭建个人博客在设置github域名的时候，在dns解析时主�
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="新民之家" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="新民之家" type="application/atom+xml">
 </head>
 
 
@@ -427,6 +427,19 @@ git +hexo 搭建个人博客在设置github域名的时候，在dns解析时主�
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -578,21 +591,21 @@ git +hexo 搭建个人博客在设置github域名的时候，在dns解析时主�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-25
+                    2022-02-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.8k
+                    5.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    21 分
+                    24 分
                 </div>
                 
 
@@ -617,6 +630,8 @@ git +hexo 搭建个人博客在设置github域名的时候，在dns解析时主�
             <div id="articleContent">
                 <p>[toc]</p>
 <h1 id="git-hexo-搭建个人博客"><a href="#git-hexo-搭建个人博客" class="headerlink" title="git +hexo 搭建个人博客"></a>git +hexo 搭建个人博客</h1><p>在设置github域名的时候，在dns解析时主机记录要设置成@（直接解析成xinmin.org)，当访问自己的网站时不然会显示不安全,在github page 的CNAME中设置成xinmin.org 不然显示不安全</p>
+<h1 id="hexo官方文档"><a href="#hexo官方文档" class="headerlink" title="hexo官方文档"></a>hexo官方文档</h1><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo官方文档</a></p>
+<p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/Snipaste_2022-02-25_20-25-22.jpg"></p>
 <h2 id="生成ssh-key"><a href="#生成ssh-key" class="headerlink" title="生成ssh key"></a>生成ssh key</h2><p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_33442844/article/details/78491777">https://blog.csdn.net/qq_33442844/article/details/78491777</a></p>
 <h2 id="Hexo-部署的时候发生错误解决方案"><a href="#Hexo-部署的时候发生错误解决方案" class="headerlink" title="Hexo 部署的时候发生错误解决方案"></a>Hexo 部署的时候发生错误解决方案</h2><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/9afb3257133b">Hexo 部署的时候发生错误解决方案 </a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u012757419/article/details/105614028">git提示“warning: LF will be replaced by CRLF”的解决办法</a></p>
@@ -669,6 +684,54 @@ prismjs:
 <p>主题中默认的 <code>prismjs</code> 主题是 <code>Tomorrow Night</code>，如果你想定制自己的主题，可以前往 <a target="_blank" rel="noopener" href="https://prismjs.com/download.html">prismjs 下载页面</a> 定制下载自己喜欢的主题 <code>css</code> 文件，然后将此 css 主题文件取名为 <code>prism.css</code>，替换掉 <code>hexo-theme-matery</code> 主题文件夹中的 <code>source/libs/prism/prism.css</code> 文件即可。</p>
 <p>结果如下</p>
 <p><img src="https://raw.githubusercontent.com/xinminwang/picture-host/main/image/%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE.png"></p>
+<h2 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h2><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Hexo+Github博客搭建记录
+<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2019-08-10 21:44:44</span>
+<span class="token key atrule">author</span><span class="token punctuation">:</span> 王新民
+<span class="token key atrule">img</span><span class="token punctuation">:</span> /medias/banner/7.jpg  //文章特色图
+<span class="token key atrule">coverImg</span><span class="token punctuation">:</span> /medias/banner/7.jpg
+<span class="token key atrule">top</span><span class="token punctuation">:</span> true  //是否设置为推荐文章
+<span class="token key atrule">cover</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  
+<span class="token key atrule">toc</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">password</span><span class="token punctuation">:</span> 5f15b28ffe43f8be4f239bdd9b69af9d80dbafcb20a5f0df5d1677a120ae9110(必须填使用SHA256加密后的密文，打开文章的时候输入未加密的密密文即可)
+<span class="token key atrule">mathjax</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">summary</span><span class="token punctuation">:</span> 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+<span class="token key atrule">tags</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> Hexo
+<span class="token punctuation">-</span> Github
+<span class="token punctuation">-</span> 博客
+<span class="token key atrule">categories</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> 软件安装与配置
+<span class="token punctuation">---</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="layout（布局）"><a href="#layout（布局）" class="headerlink" title="layout（布局）"></a>layout（布局）</h2><p>当你每一次使用代码</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new XXX<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>它其实默认使用的是<code>post</code>这个布局，也就是在<code>source</code>文件夹下的<code>_post</code>里面。</p>
+<p><code>Hexo</code>有三种默认布局：<code>post</code>、<code>page</code>和<code>draft</code>，它们分别对应不同的路径，而您自定义的其他布局和<code>post</code>相同，都将储存到<code>source/_posts</code>文件夹。</p>
+<p>而new这个命令其实是：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>只不过这个<code>layout</code>默认是<code>post</code>罢了。</p>
+<p><strong>1.2.4.2 page</strong></p>
+<p>如果你想另起一页，那么可以使用</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new page newpage<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>系统会自动给你在<code>source</code>文件夹下创建一个<code>newpage</code>文件夹，以及<code>newpage</code>文件夹中的<code>index.md</code>，这样你访问的<code>newpage</code>对应的链接就是<a target="_blank" rel="noopener" href="http://xxx.xxx/newpage">http://xxx.xxx/newpage</a></p>
+<p><strong>draft</strong></p>
+<p><code>draft</code>是草稿的意思，也就是你如果想写文章，又不希望被看到，那么可以</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new draft newdraft<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>这样会在<code>source/_draft</code>中新建一个<code>newdraft.md</code>文件，如果你的草稿文件写的过程中，想要预览一下，那么可以使用</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo server --draft<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>在本地端口中开启服务预览。</p>
+<p>如果你的草稿文件写完了，想要发表到<code>post</code>中</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo publish draft newdraft<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>就会自动把<code>newdraft.md</code>发送到<code>post</code>中</p>
 <h2 id="个人简历"><a href="#个人简历" class="headerlink" title="个人简历"></a>个人简历</h2><h3 id="音乐居中"><a href="#音乐居中" class="headerlink" title="音乐居中"></a>音乐居中</h3><p>&lt;div align=”middle”&gt;使用网易云音乐外链&lt;/div&gt;</p>
 <h3 id="网页时间设置"><a href="#网页时间设置" class="headerlink" title="网页时间设置"></a>网页时间设置</h3><pre class="line-numbers language-none"><code class="language-none">在var diffDays = Math.floor((diff / days) - diffYears * 365);后添加下面3行
 
@@ -694,8 +757,21 @@ document.getElementById("year").innerHTML = startYear + " - " + todayYear;
 <h3 id="修改valine-成中文"><a href="#修改valine-成中文" class="headerlink" title="修改valine 成中文"></a>修改valine 成中文</h3><pre class="line-numbers language-none"><code class="language-none">把lang: '&lt;% if (config.language == "zh-CN") {  %&gt;zh-cn&lt;% } else { %&gt;en&lt;% } %&gt;',修改为下面这就话
 lang:'&lt;%  {  %&gt;zh-cn&lt;% }  %&gt;',<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h2 id="相册"><a href="#相册" class="headerlink" title="相册"></a>相册</h2><p>图片放在gallaries文件家中，注意路径</p>
-<p>保证index中的title与gallaries中的文件夹名一致</p>
+<h2 id="相册"><a href="#相册" class="headerlink" title="相册"></a>相册</h2><p>图片放在gallaries文件夹中，注意路径</p>
+<p>保证index中的title与gallaries中的文件夹名一致，如果想要修改相册名称需要以下几个步骤</p>
+<ol>
+<li><p>修改source /galleries中的相册名，假设命名为相册1</p>
+</li>
+<li><p>再修改source\galleries\相册1下的index中的title名为想要的相册名称</p>
+</li>
+<li><p>修改source/_data中的galleries.json为想要的相册名（因为在laout文件夹下的gallry.ejs中有下面判断</p>
+</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">if (site.data &amp;&amp; site.data.galleries) {
+    galleries = site.data.galleries;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>所以需要在站点下的source/_data修改galleries.json文件</p>
 <h2 id="重要下面修改背景图"><a href="#重要下面修改背景图" class="headerlink" title="重要下面修改背景图"></a>重要下面修改背景图</h2><pre class="line-numbers language-none"><code class="language-none">&lt;%- partial('_partial/bg-cover') %&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
@@ -1096,9 +1172,9 @@ HTML文件的标题为： My title!<span aria-hidden="true" class="line-numbers-
 
 <p>Js</p>
 <p>在主题配置文件 .yml中配置:</p>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"># 天气接口插件
-weather:
-  enable: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"><span class="token comment"># 天气接口插件</span>
+<span class="token key atrule">weather</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>Yml</p>
 <p>展示效果可以参考我的<a target="_blank" rel="noopener" href="https://sunhwee.com/">主页</a></p>
@@ -1951,7 +2027,7 @@ NaN
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">5.6k</span>
+                        class="white-color">6.6k</span>
             
             
             
@@ -2211,13 +2287,13 @@ $(function () {
 	
 	<!--烟花特效-->
 	 
-            // 只在桌面版网页启用特效
-            var windowWidth = $(window).width();
-            if (windowWidth > 768) {
+            
+            
+            
 				<canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;" ></canvas> 
 				<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
 				<script type="text/javascript" src="/js/fireworks.js"></script> 
-				}
+				
 	
 	
     <!-- 雪花特效 -->
